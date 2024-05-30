@@ -159,6 +159,7 @@ if (max(df.page) == nro_paginas):
         f.write(today)
 
 print("Salvando ficheiros")
+os.makedirs(today_dir, exist_ok=True)
 filename_csv = os.path.join(today_dir,f"{today}_intermarche.csv")
 filename_pkl = os.path.join(today_dir,f"{today}_intermarche.pkl")
 df.to_csv(filename_csv,encoding='utf-8-sig', index=False)
