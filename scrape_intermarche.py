@@ -131,6 +131,9 @@ def fetch_and_process_data(page, headers , return_number_pages=True):
 filename = f"{today}_intermarche.csv"
 #file_path = os.path.join(os.getcwd(), filename)
 file_path = os.path.join(today_dir, filename)
+ua = ua_generator.generate(browser=('chrome', 'edge'))
+s = requests.Session()
+s.verify = False
 if os.path.exists(file_path):
     print(f"File '{filename}' exists in the folder '{os.getcwd()}'.")
     df = pd.read_csv(file_path)
@@ -157,9 +160,6 @@ if pagina == 1:
 # %%
 
 print("Continuando obtenção de produtos")
-ua = ua_generator.generate(browser=('chrome', 'edge'))
-s = requests.Session()
-s.verify = False
 for i in range(pagina, nro_paginas+1):
     print(f"Page: {i}")
     
