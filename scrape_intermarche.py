@@ -7,6 +7,7 @@ import json
 import pandas as pd
 import math
 import random
+import ua_generator
 
 url = "https://www.loja-online.intermarche.pt/api/service/produits/v2/pdvs/07348/boutiques/2119"
 # %%
@@ -56,9 +57,9 @@ def fetch_and_process_data(page, headers , return_number_pages=True):
         "ordreTri": None,
         "catalog": ["PDV"]
     }
-
+    s.headers.update(ua.headers.get())
     # Making the POST request
-    response = requests.post(url, headers=headers, data=json.dumps(body), verify=False)
+    response = s.post(url, headers=headers, data=json.dumps(body), verify=False)
 
     # Parsing the JSON response
     json_data = response.json()
@@ -89,14 +90,29 @@ def fetch_and_process_data(page, headers , return_number_pages=True):
     #products_df[selected_columns]
     aux_produtos = products_df.reindex(columns=selected_columns)
 
-    # Transforming and adding prefixes to nested columns
-    aux_produtos = aux_produtos.assign(
+    #Added verification in case there is more than one pictogramme per product (which was throwing an error before)
+    nro_picto = aux_produtos['pictogrammes'].explode().reset_index(drop=True).apply(pd.Series).shape[0]
+    if nro_picto == aux_produtos.shape[0]:
+        aux_produtos = aux_produtos.assign(
         **aux_produtos['typeProduit'].apply(pd.Series).add_prefix('typeProduit_'),
         **aux_produtos['unitePrixVente'].apply(pd.Series).add_prefix('unit_'),
         **aux_produtos['pictogrammes'].explode().apply(pd.Series).add_prefix('pictogrammes_'),
         **aux_produtos['avantages'].explode().apply(pd.Series).add_prefix('avantages_'),
         **aux_produtos['images'].apply(pd.Series).add_prefix('images_')
-    ).drop(columns=['typeProduit', 'unitePrixVente', 'images'])
+        ).drop(columns=['typeProduit', 'unitePrixVente', 'images'])
+        
+    else:
+        aux_produtos = aux_produtos.assign(
+        **aux_produtos['typeProduit'].apply(pd.Series).add_prefix('typeProduit_'),
+        **aux_produtos['unitePrixVente'].apply(pd.Series).add_prefix('unit_'),
+        **aux_produtos['avantages'].explode().apply(pd.Series).add_prefix('avantages_'),
+        **aux_produtos['images'].apply(pd.Series).add_prefix('images_')
+        ).drop(columns=['typeProduit', 'unitePrixVente', 'images'])
+        
+        pictogrammes_expanded = pd.concat([expand_list_of_dicts(row) for row in aux_produtos['pictogrammes']], keys=aux_produtos.index).reset_index(level=1, drop=True)
+        pictogrammes_df = pictogrammes_expanded.groupby(level=0).first().reindex(aux_produtos.index)
+        
+        aux_produtos = pd.concat([aux_produtos.drop(columns=['pictogrammes']),pictogrammes_df],axis=1)
 
     # Adding the 'page' column
     aux_produtos['page'] = page
@@ -141,6 +157,9 @@ if pagina == 1:
 # %%
 
 print("Continuando obtenção de produtos")
+ua = ua_generator.generate(browser=('chrome', 'edge'))
+s = requests.Session()
+s.verify = False
 for i in range(pagina, nro_paginas+1):
     print(f"Page: {i}")
     
@@ -153,6 +172,7 @@ for i in range(pagina, nro_paginas+1):
     print(f"Obtidos {aux_df.shape[0]} produtos da página {i}.")
     # Combining the current data with the total products DataFrame
     df = pd.concat([df, aux_df], ignore_index=True)
+s.close()
 
 if (max(df.page) == nro_paginas):
     with open('./log/last_execution.txt', 'w') as f:
