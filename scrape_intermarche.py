@@ -47,6 +47,12 @@ headers = {
 # %%
 
 # %%
+def expand_list_of_dicts(lst):
+        if isinstance(lst, list) and lst:
+            return pd.DataFrame(lst).add_prefix('pictogrammes_')
+        else:
+            return pd.DataFrame([{}])
+            
 def fetch_and_process_data(page, headers , return_number_pages=True):
     # Body of the request
     body = {
