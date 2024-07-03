@@ -87,11 +87,17 @@ def fetch_and_process_data(page, headers , return_number_pages=True):
         else:
             return products_df
     # Selecting specific columns
+    # selected_columns = [
+    #     'identifier', 'idProduit', 'itemId', 'produitEan13', 'typeProduit', 'unitePrixVente', 'pviIncrement', 'capacite', 
+    #     'qteMaxPanier', 'marque', 'libelle', 'conditionnement', 'images', 'prix', 'unitPrice', 'prixKg', 'prixBarre', 
+    #     'vignetteCollector', 'pictogrammes', 'poidsMinimum', 'poidsNet', 'poidsUnite', 'volume', 'isTrad', 
+    #     'isPresentAlcoholProduct', 'avantages', 'origine', 'categorie', 'nbPiece'
+    # ]
     selected_columns = [
-        'identifier', 'idProduit', 'itemId', 'produitEan13', 'typeProduit', 'unitePrixVente', 'pviIncrement', 'capacite', 
-        'qteMaxPanier', 'marque', 'libelle', 'conditionnement', 'images', 'prix', 'unitPrice', 'prixKg', 'prixBarre', 
-        'vignetteCollector', 'pictogrammes', 'poidsMinimum', 'poidsNet', 'poidsUnite', 'volume', 'isTrad', 
-        'isPresentAlcoholProduct', 'avantages', 'origine', 'categorie', 'nbPiece'
+
+        'identifier', 'produitEan13','capacite', 'typeProduit', 'unitePrixVente', 
+         'marque', 'libelle', 'conditionnement', 'images', 'prix', 'unitPrice',  
+        'pictogrammes', 'volume', 'avantages'
     ]
     #products_df[selected_columns]
     aux_produtos = products_df.reindex(columns=selected_columns)
@@ -121,9 +127,14 @@ def fetch_and_process_data(page, headers , return_number_pages=True):
         aux_produtos = pd.concat([aux_produtos.drop(columns=['pictogrammes']),pictogrammes_df],axis=1)
 
     # Adding the 'page' column
-    aux_produtos['page'] = page
-    aux_produtos['nro_paginas'] = json_data['searchResultsMetaData']['totalPageNbre']
-
+    #aux_produtos['page'] = page
+    #aux_produtos['nro_paginas'] = json_data['searchResultsMetaData']['totalPageNbre']
+    # aux_produtos = aux_produtos[['identifier', 'produitEan13', 'capacite', 'marque', 'libelle', 'conditionnement',
+    #    'prix', 'unitPrice',  'volume',  
+    #    'typeProduit_uniteByCode', 'unit_value', 
+    #    'pictogrammes_libelleCategorie', 'avantages_dateFin', 'avantages_categorie',
+    #    'images_0', 'images_1', 'images_2', 'images_3']]
+    aux_produtos = aux_produtos.drop(columns=['pictogrammes','avantages','pictogrammes_idPicto','pictogrammes_idCategorie','pictogrammes_image','typeProduit_code','typeProduit_value','pictogrammes_infoBulle','pictogrammes_0'])
     nro_paginas = json_data['searchResultsMetaData']['totalPageNbre']
 
     if return_number_pages == True:
