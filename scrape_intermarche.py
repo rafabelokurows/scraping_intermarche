@@ -127,7 +127,7 @@ def fetch_and_process_data(page, headers , return_number_pages=True):
         aux_produtos = pd.concat([aux_produtos.drop(columns=['pictogrammes']),pictogrammes_df],axis=1)
 
     # Adding the 'page' column
-    #aux_produtos['page'] = page
+    
     
     # aux_produtos = aux_produtos[['identifier', 'produitEan13', 'capacite', 'marque', 'libelle', 'conditionnement',
     #    'prix', 'unitPrice',  'volume',  
@@ -136,6 +136,7 @@ def fetch_and_process_data(page, headers , return_number_pages=True):
     #    'images_0', 'images_1', 'images_2', 'images_3']]
     aux_produtos = aux_produtos.drop(columns=['pictogrammes','avantages','pictogrammes_idPicto','pictogrammes_idCategorie','pictogrammes_image','typeProduit_code','typeProduit_value','pictogrammes_infoBulle','pictogrammes_0'])    
     aux_produtos['nro_paginas'] = json_data['searchResultsMetaData']['totalPageNbre']
+    aux_produtos['page'] = page
     nro_paginas = json_data['searchResultsMetaData']['totalPageNbre']
 
     if return_number_pages == True:
