@@ -135,7 +135,7 @@ def fetch_and_process_data(page, headers , return_number_pages=True):
     #    'typeProduit_uniteByCode', 'unit_value', 
     #    'pictogrammes_libelleCategorie', 'avantages_dateFin', 'avantages_categorie',
     #    'images_0', 'images_1', 'images_2', 'images_3']]
-    aux_produtos = aux_produtos.drop(columns=['pictogrammes','avantages','pictogrammes_idPicto','pictogrammes_idCategorie','pictogrammes_image','typeProduit_code','typeProduit_value','pictogrammes_infoBulle','pictogrammes_0'])    
+    aux_produtos = aux_produtos.drop(columns=['pictogrammes','avantages','pictogrammes_idPicto','pictogrammes_idCategorie','pictogrammes_image','typeProduit_code','typeProduit_value','pictogrammes_infoBulle'])    
     aux_produtos['nro_paginas'] = json_data['searchResultsMetaData']['totalPageNbre']
     aux_produtos['page'] = page
     nro_paginas = json_data['searchResultsMetaData']['totalPageNbre']
