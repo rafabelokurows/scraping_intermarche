@@ -124,7 +124,8 @@ def fetch_and_process_data(page, headers , return_number_pages=True):
         pictogrammes_expanded = pd.concat([expand_list_of_dicts(row) for row in aux_produtos['pictogrammes']], keys=aux_produtos.index).reset_index(level=1, drop=True)
         pictogrammes_df = pictogrammes_expanded.groupby(level=0).first().reindex(aux_produtos.index)
         
-        aux_produtos = pd.concat([aux_produtos.drop(columns=['pictogrammes']),pictogrammes_df],axis=1)
+        aux_produtos = pd.concat([aux_produtos,pictogrammes_df],axis=1)
+        #aux_produtos = pd.concat([aux_produtos.drop(columns=['pictogrammes']),pictogrammes_df],axis=1)
 
     # Adding the 'page' column
     
