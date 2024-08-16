@@ -104,12 +104,13 @@ def fetch_and_process_data(page, headers , return_number_pages=True):
 
     #Added verification in case there is more than one pictogramme per product (which was throwing an error before)
     nro_picto = aux_produtos['pictogrammes'].explode().reset_index(drop=True).apply(pd.Series).shape[0]
+    
     if nro_picto == aux_produtos.shape[0]:
         aux_produtos = aux_produtos.assign(
         **aux_produtos['typeProduit'].apply(pd.Series).add_prefix('typeProduit_'),
         **aux_produtos['unitePrixVente'].apply(pd.Series).add_prefix('unit_'),
         **aux_produtos['pictogrammes'].explode().apply(pd.Series).add_prefix('pictogrammes_'),
-        **aux_produtos['avantages'].explode().apply(pd.Series).add_prefix('avantages_'),
+        #**aux_produtos['avantages'].explode().apply(pd.Series).add_prefix('avantages_'),
         **aux_produtos['images'].apply(pd.Series).add_prefix('images_')
         ).drop(columns=['typeProduit', 'unitePrixVente', 'images'])
         
@@ -117,7 +118,7 @@ def fetch_and_process_data(page, headers , return_number_pages=True):
         aux_produtos = aux_produtos.assign(
         **aux_produtos['typeProduit'].apply(pd.Series).add_prefix('typeProduit_'),
         **aux_produtos['unitePrixVente'].apply(pd.Series).add_prefix('unit_'),
-        **aux_produtos['avantages'].explode().apply(pd.Series).add_prefix('avantages_'),
+        #**aux_produtos['avantages'].explode().apply(pd.Series).add_prefix('avantages_'),
         **aux_produtos['images'].apply(pd.Series).add_prefix('images_')
         ).drop(columns=['typeProduit', 'unitePrixVente', 'images'])
         
@@ -126,6 +127,17 @@ def fetch_and_process_data(page, headers , return_number_pages=True):
         
         aux_produtos = pd.concat([aux_produtos,pictogrammes_df],axis=1)
         #aux_produtos = pd.concat([aux_produtos.drop(columns=['pictogrammes']),pictogrammes_df],axis=1)
+    
+    nro_promos = aux_produtos['avantages'].explode().reset_index(drop=True).apply(pd.Series).shape[0]
+    if nro_promos == aux_produtos.shape[0]:
+        aux_produtos = aux_produtos.assign(
+        **aux_produtos['avantages'].explode().apply(pd.Series).add_prefix('avantages_')
+        ).drop(columns=['avantages'])
+    else:
+        avantages_expanded = pd.concat([expand_list_of_dicts(row) for row in aux_produtos['avantages']], keys=aux_produtos.index).reset_index(level=1, drop=True)
+        avantages_df = avantages_expanded.groupby(level=0).first().reindex(aux_produtos.index)
+        
+        aux_produtos = pd.concat([aux_produtos,avantages_df],axis=1)
 
     # Adding the 'page' column
     
