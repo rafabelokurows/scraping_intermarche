@@ -156,11 +156,12 @@ if match:
     df_categories = pd.DataFrame(categories_list)
 
 levels = df_categories.query("level == 3")
+print(f'There are {levels.shape[0]} categories to scrape')
 #%%
 
 #%%
 df_products = pd.DataFrame()
-for index, row in levels.iloc[0:5,].iterrows():
+for index, row in levels.iterrows():
     print(row['title'])
     if index % 10 == 0:
       print(index)
