@@ -165,13 +165,14 @@ print(f'There are {levels.shape[0]} categories to scrape')
 
 #%%
 df_products = pd.DataFrame()
-for index, row in levels.iterrows():
+df_control = pd.DataFrame()
+for index, row in levels.iloc[0:20,].iterrows():
     print(row['title'])
     if index % 10 == 0:
       print(index)
       time.sleep(random.uniform(10, 20))
     url = f"https://www.loja-online.intermarche.pt{row['link']}"
-    print(url)
+    #print(url)
     #response = requests.request("GET", url, headers=headers, data=payload,verify=False)
     try:
         response = make_request(url, headers, payload)
@@ -235,9 +236,19 @@ for index, row in levels.iterrows():
                 # print("-" * 40)
         except json.JSONDecodeError:
             print("Error decoding JSON for a match.")
-
+    aux_control = pd.DataFrame([{
+                        'index': index,
+                        'no_products': aux_products.shape[0],
+                        'id': row['id'],
+                        'title': row['title']
+    
+                    }])
     aux_products = pd.DataFrame(product_list)
     df_products = pd.concat([df_products, aux_products])
+    print(f'Products found: {aux_products.shape[0]}')
+    df_control = pd.concat([df_control, aux_control])
+
+
 
 today = datetime.now().strftime("%Y%m%d")
 today_dir = os.path.join("./data/", today)
@@ -247,6 +258,5 @@ filename_csv = os.path.join(today_dir,f"{today}_all_products_intermarche.csv")
 filename_pkl = os.path.join(today_dir,f"{today}_all_products_intermarche.pkl")
 df_products.to_csv(filename_csv,encoding='utf-8-sig', index=False)
 df_products.to_pickle(filename_pkl)
-
-
+df_control.reset_index(drop=True).to_csv("df_control_intermarche.csv", index=False,encoding='utf-8-sig')
 #%%
