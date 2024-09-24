@@ -194,7 +194,7 @@ try:
     last_exec = re.findall(r'\d+\.?\d*', first_row)
 
     if last_exec:
-        last_exec = float(last_exec[0])  # Convert to float if it's a decimal
+        last_exec = int(last_exec[0])  # Convert to float if it's a decimal
     else:
         last_exec = 0  # Set to 0 if no number is found in the first row
 
@@ -202,6 +202,7 @@ except FileNotFoundError:
     # If the file doesn't exist, set number to 0
     last_exec = 0
 
+last_exec = int(last_exec)
 print(f'Last exec: {last_exec}')
 #last_results = deque(maxlen=3)
 errors = 0
