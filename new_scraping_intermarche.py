@@ -236,6 +236,8 @@ for index, row in levels.iloc[0:20,].iterrows():
                 # print("-" * 40)
         except json.JSONDecodeError:
             print("Error decoding JSON for a match.")
+    
+    aux_products = pd.DataFrame(product_list)
     aux_control = pd.DataFrame([{
                         'index': index,
                         'no_products': aux_products.shape[0],
@@ -243,7 +245,6 @@ for index, row in levels.iloc[0:20,].iterrows():
                         'title': row['title']
     
                     }])
-    aux_products = pd.DataFrame(product_list)
     df_products = pd.concat([df_products, aux_products])
     print(f'Products found: {aux_products.shape[0]}')
     df_control = pd.concat([df_control, aux_control])
