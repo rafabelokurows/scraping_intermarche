@@ -19,33 +19,413 @@
 17,1,1,11526,Agrião e Alho Francês
 18,4,4,11527,Cenouras e Abóbora
 19,10,10,11528,Tomates e Pimentos
-20,1,1,11530,Pepinos e Curgetes
-21,1,1,11534,Ervas Aromáticas
-22,11,11,11533,Outros Legumes
-23,32,32,11539,Porco
-24,36,36,11540,"Novilho, Vitela e Vitelão"
-25,8,8,11541,Borrego e Cabrito
-26,1,1,11542,Coelho
-27,40,40,11543,Aves
-28,16,16,11544,"Salsichas, Especialidades e Preparados"
-29,6,6,11545,Bacalhau
-30,40,40,11546,Peixe
-31,13,13,11547,Marisco
-32,39,39,11551,Queijo Fatiado e Bolas
-33,26,26,11552,Queijo Ralado e Para Barrar
-34,40,40,11553,Queijo Curado e Amanteigado
-35,15,15,11554,Snacks
-36,30,30,11555,Queijo Fresco e Mozzarella
-37,40,40,11560,Enchidos
-38,23,23,11558,Fiambre Aves
-39,14,14,11559,Fiambre Porco
-40,30,30,11556,Presunto e Bacon
-41,15,15,11557,"Mortadela, Paio e Chourição"
-42,7,7,11561,Salsichas
-43,6,6,11562,Especialidades
-44,34,34,11566,Pão de Forno
-45,40,40,11567,Pão de Forma e embalados
-46,33,33,11568,"Tostas, Croutons e Gressinos"
-47,3,3,11569,Pão Ralado
-48,30,30,11570,Pastelaria Doce
-49,12,12,11571,Pastelaria Salgada
+20,0,0,11530,Pepinos e Curgetes
+21,0,0,11534,Ervas Aromáticas
+22,0,0,11533,Outros Legumes
+23,0,0,11539,Porco
+24,0,0,11540,"Novilho, Vitela e Vitelão"
+25,0,0,11541,Borrego e Cabrito
+26,0,0,11542,Coelho
+27,0,0,11543,Aves
+28,0,0,11544,"Salsichas, Especialidades e Preparados"
+29,0,0,11545,Bacalhau
+30,0,0,11546,Peixe
+31,0,0,11547,Marisco
+32,0,0,11551,Queijo Fatiado e Bolas
+33,0,0,11552,Queijo Ralado e Para Barrar
+34,0,0,11553,Queijo Curado e Amanteigado
+35,0,0,11554,Snacks
+36,0,0,11555,Queijo Fresco e Mozzarella
+37,0,0,11560,Enchidos
+38,0,0,11558,Fiambre Aves
+39,0,0,11559,Fiambre Porco
+40,0,0,11556,Presunto e Bacon
+41,0,0,11557,"Mortadela, Paio e Chourição"
+42,0,0,11561,Salsichas
+43,0,0,11562,Especialidades
+44,0,0,11566,Pão de Forno
+45,0,0,11567,Pão de Forma e embalados
+46,0,0,11568,"Tostas, Croutons e Gressinos"
+47,0,0,11569,Pão Ralado
+48,0,0,11570,Pastelaria Doce
+49,0,0,11571,Pastelaria Salgada
+50,0,0,11691,Leite Meio Gordo
+51,0,0,11692,Leite Gordo
+52,0,0,11693,Leite Magro
+53,0,0,11694,Leite Proteico
+54,0,0,11695,Achocolatados e Aromatizados
+55,0,0,11696,Leites Infantis e Bebidas Lácteas
+56,0,0,11697,Sem Lactose
+57,0,0,11753,Bebidas Vegetais
+58,0,0,11698,Ovos
+59,0,0,11706,Manteigas
+60,0,0,11707,Cremes Vegetais e para Barrar
+61,0,0,11703,Natas Culinária e Bechamel
+62,0,0,11704,Margarinas
+63,0,0,11705,Natas para Bater e Chantilly
+64,0,0,10400,Iogurtes Líquidos
+65,0,0,10395,Iogurtes Aromas e Naturais
+66,0,0,10396,Iogurtes Pedaços
+67,0,0,10397,Iogurtes Magros
+68,0,0,10398,Iogurtes Bifidus
+69,0,0,11178,Iogurtes Infantis
+70,0,0,11176,Iogurtes Gregos e Kefir
+71,0,0,11177,Iogurtes Proteicos
+72,0,0,11175,Iogurtes sem Lactose
+73,0,0,11818,Vegegurtes e Yofu
+74,0,0,10719,Mousses e Pudins
+75,0,0,10800,Gelatinas
+76,0,0,11799,Fruta
+77,0,0,11715,Arroz
+78,0,0,11716,Massa
+79,0,0,11717,Farinha
+80,0,0,11718,Azeite
+81,0,0,11719,Óleo Alimentar
+82,0,0,11720,Vinagre
+83,0,0,11721,Molhos
+84,0,0,11757,Temperos
+85,0,0,11722,"Maionese, Ketchup e Mostarda"
+86,0,0,11723,Especiarias e Ervas Aromáticas
+87,0,0,11724,Caldos
+88,0,0,11725,Sal
+89,0,0,10242,Feijão
+90,0,0,10243,Grão
+91,0,0,11021,Lentilhas
+92,0,0,11817,Sementes
+93,0,0,10273,Café em Cápsulas
+94,0,0,11058,Café Torrado
+95,0,0,10271,Café Solúvel
+96,0,0,11057,Bebidas de Cereais
+97,0,0,11736,Chás e Infusões
+98,0,0,11745,Chocolate em Pó
+99,0,0,10292,Açúcar e Adoçantes
+100,0,0,11737,Chocolate e Cacau de Culinária
+101,0,0,11738,Farinha e Fermento
+102,0,0,11739,"Aromas, Toppings e Corantes"
+103,0,0,11740,Gelatinas
+104,0,0,11741,Bolos e Sobremesas
+105,0,0,11742,Coberturas e Decoração
+106,0,0,11743,Leite Condensado
+107,0,0,11744,Fruta em Calda
+108,0,0,10260,Cereais Infantis e Juvenis
+109,0,0,11050,Cereais Linha e Fibra
+110,0,0,11052,Muesli e Granola
+111,0,0,11053,Flocos e Papas
+112,0,0,11054,Barras de Cereais
+113,0,0,11072,Doces e Compotas
+114,0,0,10318,Marmelada e Goiabada
+115,0,0,10317,Cremes de Barrar
+116,0,0,10319,Mel
+117,0,0,11082,Bolachas de Chocolate
+118,0,0,10796,Bolachas com Cobertura e Recheio
+119,0,0,10251,Bolachas Infantis
+120,0,0,11747,"Bolachas de Manteiga, Shortcake e Palmiers"
+121,0,0,10253,Bolachas Maria e Torrada
+122,0,0,10250,Bolachas Cracker e Água e Sal
+123,0,0,10252,Bolachas Fibra e sem Açúcar
+124,0,0,10259,"Bolos, Napolitanas e Pães de Leite"
+125,0,0,11750,Bolachas Sortidas
+126,0,0,11816,Tortitas Arroz e Milho
+127,0,0,10306,Chocolates de Leite
+128,0,0,10746,Chocolates Negros
+129,0,0,10747,Chocolates Brancos
+130,0,0,10751,Chocolate com Avelã e Amêndoa
+131,0,0,10304,Bombons
+132,0,0,10308,Chocolates Mini e Drageias
+133,0,0,10307,Chocolate com Recheios de Fruta
+134,0,0,10305,Chocolate Infantil
+135,0,0,11748,Gomas e Rebuçados
+136,0,0,11749,Pastilhas Elásticas
+137,0,0,11727,Azeitonas e Tremoços
+138,0,0,11728,"Cogumelos, Milho e Ervilhas"
+139,0,0,11729,Feijão e Grão
+140,0,0,11730,Peixe
+141,0,0,11731,Salsichas
+142,0,0,11732,Patê
+143,0,0,11733,Pickles e Outros Vegetais
+144,0,0,10245,Refeições prontas
+145,0,0,10246,Sopas e Cremes
+146,0,0,11746,"Noodles, Pastas e Especialidades"
+147,0,0,10221,Batatas Lisas e Onduladas
+148,0,0,10219,Batatas com Sabores
+149,0,0,10218,Batatas Palha e Caseiras
+150,0,0,10222,Snacks e Aperitivos
+151,0,0,10223,Desidratados e Frutos Secos
+152,0,0,11726,Pipocas
+153,0,0,11589,"Douradinhos, Filetes e Crocantes"
+154,0,0,11587,Hamburguers e Almôndegas
+155,0,0,11588,Entradas e Salgados
+156,0,0,11584,Pizzas
+157,0,0,11585,Lasanhas e Massas Italianas
+158,0,0,11586,Refeições
+159,0,0,11576,Peixe
+160,0,0,11578,Bacalhau
+161,0,0,11577,Marisco
+162,0,0,11579,Fruta
+163,0,0,11580,Legumes
+164,0,0,11581,Batatas Pré-Fritas
+165,0,0,11582,Gelados
+166,0,0,11583,Sobremesas
+167,0,0,11482,Gelo Picado e Cubos
+168,0,0,11644,Pizzas e Lasanhas
+169,0,0,11645,Outras Refeições
+170,0,0,11646,Sopas e Cremes
+171,0,0,11647,"Saladas, Sandes e Wraps"
+172,0,0,11648,Massas
+173,0,0,11672,Água com Gás
+174,0,0,11673,Água sem Gás
+175,0,0,11674,Água com Sabores
+176,0,0,11675,Água Tónica e Ginger Ale
+177,0,0,11112,Cerveja Branca
+178,0,0,11113,Cerveja Preta
+179,0,0,10341,Cerveja sem Álcool
+180,0,0,10342,Sidras e Panachés
+181,0,0,11116,Cervejas Estrangeiras e Artesanais
+182,0,0,10011,Refrigerantes com Gás
+183,0,0,10325,Refrigerantes sem Gás
+184,0,0,11109,Ice Tea e Tisanas
+185,0,0,11754,Néctares de Fruta
+186,0,0,11755,Sumos 100%
+187,0,0,11756,Concentrados e em Pó
+188,0,0,11111,Bebidas Energéticas e Isotónicas
+189,0,0,11798,Água Tónica e Ginger Ale
+190,0,0,11476,Tintos do Douro
+191,0,0,11477,Tintos do Dão
+192,0,0,11714,Tintos das Beiras
+193,0,0,11620,Tintos da Bairrada
+194,0,0,11621,Tintos de Lisboa e Tejo
+195,0,0,11622,Tintos de Setúbal
+196,0,0,11623,Tintos do Alentejo
+197,0,0,11625,Tintos Biológicos
+198,0,0,11626,Tintos Estrangeiros
+199,0,0,11478,Brancos do Douro
+200,0,0,11479,Brancos do Dão
+201,0,0,11480,Brancos das Beiras
+202,0,0,11627,Brancos da Bairrada
+203,0,0,11628,Brancos de Lisboa e Tejo
+204,0,0,11629,Brancos de Setúbal
+205,0,0,11630,Brancos do Alentejo
+206,0,0,11633,Brancos Estrangeiros
+207,0,0,11634,Rosé Douro e Dão
+208,0,0,11635,"Rosé Tejo, Lisboa e Setúbal"
+209,0,0,11636,Rosé Alentejo e Algarve
+210,0,0,11651,Verde Tinto
+211,0,0,11652,Verde Branco
+212,0,0,11653,Verde Rosé
+213,0,0,11655,Corrente Tinto
+214,0,0,11656,Corrente Branco
+215,0,0,11658,Frisante
+216,0,0,11659,Sangria
+217,0,0,11660,Moscatel
+218,0,0,11661,Vinho do Porto
+219,0,0,11663,Licores
+220,0,0,11664,Aperitivos
+221,0,0,11665,Vodka
+222,0,0,11666,Whisky
+223,0,0,11667,"Cocktails, Cachaça, Tequila e Rum"
+224,0,0,11668,Gin
+225,0,0,11669,Aguardente e Brandy
+226,0,0,11670,Champanhes
+227,0,0,11671,Espumantes
+228,0,0,11404,Detergente Máquina Loiça
+229,0,0,11405,Detergente Líquido Loiça
+230,0,0,11407,Limpeza Fogão e Forno
+231,0,0,11408,Multisuperfícies
+232,0,0,10602,Abrasivos 
+233,0,0,10603,Blocos e Líquidos Sanitários
+234,0,0,10604,Anticalcários e Desinfetantes
+235,0,0,10739,Detergente Lava-Tudo
+236,0,0,11410,Detergente Limpa-Vidros
+237,0,0,11411,Lixívia
+238,0,0,11412,Multisuperfícies
+239,0,0,11413,Desentupidores
+240,0,0,11414,Limpeza e Cuidados de Madeiras
+241,0,0,11415,Específicos de Limpeza
+242,0,0,11793,"Panos, Esfregões e Luvas"
+243,0,0,11794,Esfregonas e Mopas
+244,0,0,11795,"Vassouras, escovas e Pás"
+245,0,0,11796,Baldes e Alguidares
+246,0,0,11797,Sacos do Lixo
+247,0,0,10563,Ambientadores Elétricos e Automáticos
+248,0,0,10564,Ambientadores Automóvel
+249,0,0,10566,Velas Ambientadoras
+250,0,0,10567,Absorve Odores
+251,0,0,11792,Sprays e Sticks Perfumadores
+252,0,0,10569,Inseticidas Elétricos e Automáticos
+253,0,0,10570,Inseticidas em Spray e Fitas
+254,0,0,10571,Anti-Traças
+255,0,0,11783,Lavagem e Limpeza Manual
+256,0,0,11784,Detergente em Pó
+257,0,0,11785,Detergente Líquido
+258,0,0,11786,Detergente em Cápsulas e Pastilhas
+259,0,0,11787,Amaciador
+260,0,0,11788,Aditivos e Outros Cuidados
+261,0,0,11789,Lixívia
+262,0,0,11790,Limpeza e Cuidados do Calçado
+263,0,0,11791,Lavandaria
+264,0,0,10600,Guardanapos
+265,0,0,10601,Rolos de Cozinha
+266,0,0,10471,Pasta de Dentes
+267,0,0,10473,Escova de Dentes
+268,0,0,10470,Fios Dentários
+269,0,0,10474,Elixires
+270,0,0,10472,Produtos para Próteses Dentárias
+271,0,0,10469,Higiene Oral Infantil
+272,0,0,11758,Champôs
+273,0,0,11759,Condicionadores e Máscaras
+274,0,0,11760,Coloração
+275,0,0,11761,Modeladores
+276,0,0,11762,Acessórios
+277,0,0,11764,Unhas
+278,0,0,11765,"Máscaras, Cremes e Limpeza Facial"
+279,0,0,11766,Olhos e Rosto
+280,0,0,11767,Batons
+281,0,0,10476,Gel de Banho
+282,0,0,10477,Sabonetes
+283,0,0,10478,Cuidados para o Corpo
+284,0,0,10786,Desodorizantes e Perfumes
+285,0,0,10475,Depilação
+286,0,0,11763,Acessórios
+287,0,0,10538,Pensos Diários
+288,0,0,10539,Pensos Higiénicos
+289,0,0,10540,Tampões
+290,0,0,10541,Gel e Loções
+291,0,0,10698,Toalhitas Íntimas
+292,0,0,11768,Incontinência
+293,0,0,11316,Barba
+294,0,0,11317,Rosto
+295,0,0,11318,Cabelo
+296,0,0,11383,Gel de Banho
+297,0,0,11325,Desodorizantes e Perfumes
+298,0,0,11322,Depilação
+299,0,0,10529,Bronzeadores
+300,0,0,10530,Protetores
+301,0,0,10528,After Sun
+302,0,0,11777,Criança
+303,0,0,11400,Primeiros Socorros
+304,0,0,11401,Desinfetantes
+305,0,0,11402,Baton e Bálsamos
+306,0,0,11778,Cotonetes e Soro Fisiológico
+307,0,0,11779,Preservativos e Outros
+308,0,0,11780,Papel Higiénico
+309,0,0,11781,Lenços de Papel
+310,0,0,11782,Toalhitas
+311,0,0,11595,Leites Infantis
+312,0,0,11596,Papas Infantis
+313,0,0,11597,Alimentos Lácteos
+314,0,0,11598,"Boiões, Saquetas e Purés de Fruta"
+315,0,0,11599,Snacks e Bolachinhas
+316,0,0,11601,Fraldas
+317,0,0,11602,Toalhitas
+318,0,0,11603,Banho
+319,0,0,11604,Higiene Oral
+320,0,0,11605,Proteção e Hidratação
+321,0,0,11606,Bacios e Redutores
+322,0,0,11607,Banheiras e Outros Acessórios
+323,0,0,11608,Brinquedos Primeira Idade
+324,0,0,11609,Chupetas e Acessórios de Alimentação
+325,0,0,11613,"Toalhas, Roupões, Resguardos e Mantas"
+326,0,0,10659,Ração Seca
+327,0,0,10658,Comida Húmida
+328,0,0,10660,Snacks e Biscoitos
+329,0,0,10657,Acessórios e Brinquedos
+330,0,0,10663,Ração Seca
+331,0,0,10662,Comida Húmida
+332,0,0,10664,Snacks e Biscoitos
+333,0,0,10666,Areias e Higiene
+334,0,0,11263,Pássaros
+335,0,0,11266,Roedores
+336,0,0,11280,Frutas e Legumes Bio
+337,0,0,11281,Frutos Secos e Sementes Bio
+338,0,0,11282,Laticínios e Alternativas Bio
+339,0,0,11283,"Talho, Peixaria e Alternativas Bio"
+340,0,0,11284,Bebé e Criança Bio
+341,0,0,11286,Sobremesas e Apoio à Pastelaria Bio
+342,0,0,11287,Bebidas e Garrafeira Bio
+343,0,0,11288,Cereais e Barras Bio
+344,0,0,11289,Cafés e Chás Bio
+345,0,0,11290,Doces e Mel Bio
+346,0,0,11291,Bolachas e Chocolates Bio
+347,0,0,11292,Ingredientes Culinária Bio
+348,0,0,11277,Leite e Bebidas Sem Lactose
+349,0,0,11276,Iogurtes Sem Lactose
+350,0,0,11274,Queijos Sem Lactose
+351,0,0,11814,Manteiga e Natas Sem Lactose
+352,0,0,11278,Sobremesas Sem Lactose
+353,0,0,11815,Bolachas Sem Lactose
+354,0,0,11806,Bolachas e Biscoitos
+355,0,0,11808,"Arroz, Massa e Farinha"
+356,0,0,11809,"Cereais, Barras e Chocolates"
+357,0,0,11805,Padaria e Pastelaria
+358,0,0,11810,Refeições Rápidas
+359,0,0,11811,Alternativas Queijo e Charcutaria
+360,0,0,11812,Sobremesas Vegan
+361,0,0,11813,Ingredientes Vegan
+362,0,0,10711,Bebidas de Soja
+363,0,0,10712,Iogurtes e Sobremesas de Soja
+364,0,0,10863,Cremes e molhos de culinária
+365,0,0,10713,Outros Produtos de Soja
+366,0,0,10456,"Massas,Arroz e Leguminosas"
+367,0,0,10454,"Farinhas, Farelos e Sementes"
+368,0,0,10455,Flocos e Cereais
+369,0,0,10450,Bolachas e Biscoitos
+370,0,0,10451,Chás Medicinais e Infusões
+371,0,0,10452,Chocolates e Achocolatados
+372,0,0,10453,Doces e Marmeladas 
+373,0,0,10458,Suplementos e Vitaminas
+374,0,0,10906,Refeições
+375,0,0,10457,Substitutos de refeição
+376,0,0,10915,Bebidas
+377,0,0,10621,Decoração para Festas
+378,0,0,10622,Palhinhas e Velas de Aniversário
+379,0,0,10623,Descartáveis
+380,0,0,10624,Guardanapos e Toalhas
+381,0,0,10625,Outros
+382,0,0,11217,Velas de Aniversário
+383,0,0,10626,Cutelaria
+384,0,0,10627,"Frigideiras, Tachos e Panelas"
+385,0,0,10628,"Pratos, Travessas e Saladeiras"
+386,0,0,10629,"Copos, Chávenas e Canecas"
+387,0,0,10630,Utensílios de Cozinha
+388,0,0,10631,Conservação de Alimentos
+389,0,0,10726,Fósforos e Palitos
+390,0,0,10632,Outros
+391,0,0,10640,Tratamento de Roupa
+392,0,0,10641,Tábuas de Engomar e Capas
+393,0,0,10642,Estendais e Cabides
+394,0,0,10788,Utilidades
+395,0,0,10645,Meias e Collants
+396,0,0,10647,Têxtil-Lar
+397,0,0,10893,Roupa
+398,0,0,10648,Ferramentas e Acessórios
+399,0,0,10649,Tintas e Vernizes
+400,0,0,10650,Colas e Adesivos
+401,0,0,10944,Aquecimento
+402,0,0,10651,Limpeza e Proteção Auto
+403,0,0,10652,Lubrificação e Manutenção Auto
+404,0,0,10653,Outros
+405,0,0,10787,Ambientores auto
+406,0,0,10656,Pilhas e Lanternas
+407,0,0,10857,Arrumação
+408,0,0,10894,Outros
+409,0,0,11689,Apoio Escolar
+410,0,0,11491,"Cadernos, Blocos e Papel"
+411,0,0,11492,Escrita
+412,0,0,11493,Organização e Arquivo
+413,0,0,11494,"Desenho, Pintura e Moldes"
+414,0,0,11495,Mochilas e Estojos
+415,0,0,11496,Material de Escritório
+416,0,0,11769,Música
+417,0,0,11680,Puzzles e Construções
+418,0,0,11681,Bonecas e Peluches
+419,0,0,11682,Ação e Aventura
+420,0,0,11683,Brinquedos Exterior
+421,0,0,11684,Veículos e Telecomandados
+422,0,0,11685,Jogos Infantis e Educativos
+423,0,0,11686,Jogos em Família
+424,0,0,11772,Piscina
+425,0,0,11771,Barbecue
+426,0,0,11773,Mobiliário
+427,0,0,11774,Decoração e Tratamento de Jardim
+428,0,0,11775,Acessórios
+429,0,0,11776,Conservação de Alimentos
