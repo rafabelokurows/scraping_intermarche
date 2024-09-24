@@ -288,7 +288,7 @@ for index, row in levels.iloc[0:50,].iterrows():
     df_control = pd.concat([df_control, aux_control])
 
 
-today = datetime.now().strftime("%Y%m%d")
+today = datetime.now().strftime("%Y%m%d%h%s")
 today_dir = os.path.join("./data/", today)
 print("Salvando ficheiros")
 os.makedirs(today_dir, exist_ok=True)
