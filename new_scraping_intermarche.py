@@ -213,7 +213,7 @@ for index, row in levels.iloc[0:100,].iterrows():
         print(js_data_matches)
         errors = errors + 1
         print(f"Errors: {errors}")
-        if errors == 3:
+        if errors == 50:
           print(f"Three consecutive rows with no products, stopping iteration.")
           break
         continue  # Skip to the next iteration
