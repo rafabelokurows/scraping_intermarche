@@ -7,6 +7,8 @@ import json
 import os
 import time
 import random
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning) 
 
 # url = "https://www.loja-online.intermarche.pt/shelves/frutas-e-legumes/frutas/laranjas-e-outros-citrinos/11510"
 # url = "https://www.loja-online.intermarche.pt/shelves/frutas-e-legumes/frutas/macas-e-peras/11508"
