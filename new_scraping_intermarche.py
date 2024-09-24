@@ -187,7 +187,7 @@ print(f'There are {levels.shape[0]} categories to scrape')
 last_exec = 0
 try:
     # Open the text file and read the first row
-    with open("./log/last_execution_all.txt', 'r') as file:
+    with open("./log/last_execution_all.txt", 'r') as file:
       last_exec = file.readline().strip()
 
     # Extract the number from the first row using a regex
