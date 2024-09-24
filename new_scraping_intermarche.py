@@ -188,7 +188,7 @@ last_exec = 0
 try:
     # Open the text file and read the first row
     with open("./log/last_execution_all.txt", 'r') as file:
-      last_exec = file.readline().strip()
+      first_row = file.readline().strip()
 
     # Extract the number from the first row using a regex
     last_exec = re.findall(r'\d+\.?\d*', first_row)
