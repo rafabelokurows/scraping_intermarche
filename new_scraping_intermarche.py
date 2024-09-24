@@ -184,12 +184,30 @@ print(f'There are {levels.shape[0]} categories to scrape')
 #     print(f"{row['title']}: {aux_products.shape[0]}") 
 #     df_control = pd.concat([df_control, aux_control])
 
+last_exec = 0
+try:
+    # Open the text file and read the first row
+    with open("./log/last_execution_all.txt', 'r') as file:
+      last_exec = file.readline().strip()
 
+    # Extract the number from the first row using a regex
+    last_exec = re.findall(r'\d+\.?\d*', first_row)
+
+    if last_exec:
+        last_exec = float(last_exec[0])  # Convert to float if it's a decimal
+    else:
+        last_exec = 0  # Set to 0 if no number is found in the first row
+
+except FileNotFoundError:
+    # If the file doesn't exist, set number to 0
+    last_exec = 0
+
+print(f'Last exec: {last_exec}')
 #last_results = deque(maxlen=3)
 errors = 0
 df_products = pd.DataFrame()
 df_control = pd.DataFrame()
-for index, row in levels.iterrows():
+for index, row in levels.iloc[last_exec:,].iterrows():
     aux_products = pd.DataFrame()
     url = f"https://www.loja-online.intermarche.pt{row['link']}"
     if index % 10 == 0 & index != 0:
@@ -213,9 +231,10 @@ for index, row in levels.iterrows():
         print(js_data_matches)
         errors = errors + 1
         print(f"Errors: {errors}")
-        # if errors == 50:
-        #   print(f"Three consecutive rows with no products, stopping iteration.")
-        #   break
+        if errors == 3:
+          print(f"Three consecutive rows with no products, stopping iteration.")
+          last_exec = index-3
+          break
         continue  # Skip to the next iteration
     # Step 2: Iterate over each match and extract the products
     for js_data_str in filtered_matches:
@@ -288,6 +307,12 @@ for index, row in levels.iterrows():
     df_control = pd.concat([df_control, aux_control])
 
 
+if (index < levels.shape[0]):
+  with open('./log/last_execution_all.txt', 'w') as f:
+        f.write(last_exec)
+elif (index == levels.shape[0]):
+  with open('./log/last_execution_all.txt', 'w') as f:
+        f.write(levels.shape[0])
 today = datetime.now().strftime("%Y%m%d")
 today_dir = os.path.join("./data/", today)
 today_hour = datetime.now().strftime("%Y%m%d%H%s")
