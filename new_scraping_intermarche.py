@@ -170,7 +170,7 @@ for index, row in levels.iterrows():
     aux_products = pd.DataFrame()
     if index % 10 == 0:
       print(f"Sleep, index: {index}")
-      time.sleep(random.uniform(10, 30))
+      time.sleep(random.uniform(20, 60))
     url = f"https://www.loja-online.intermarche.pt{row['link']}"
     #print(url)
     #response = requests.request("GET", url, headers=headers, data=payload,verify=False)
@@ -185,6 +185,8 @@ for index, row in levels.iterrows():
 
     product_list = []
     print(f'Matches: {len(filtered_matches)}')
+    if len(filtered_matches) == 0:
+      print(js_data_matches)
     # Step 2: Iterate over each match and extract the products
     for js_data_str in filtered_matches:
         try:
