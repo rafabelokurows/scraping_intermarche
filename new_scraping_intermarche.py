@@ -166,7 +166,7 @@ print(f'There are {levels.shape[0]} categories to scrape')
 #%%
 df_products = pd.DataFrame()
 df_control = pd.DataFrame()
-for index, row in levels.iloc[0:50,].iterrows():
+for index, row in levels.iterrows():
     aux_products = pd.DataFrame()
     print(row['title'])
     #if index % 10 == 0:
