@@ -250,7 +250,7 @@ for index, row in levels.iloc[0:50,].iterrows():
     
                     }])
     df_products = pd.concat([df_products, aux_products])
-    print(f'{row['title']} : {aux_products.shape[0]}') 
+    print(f"{row['title']}: {aux_products.shape[0]}") 
     df_control = pd.concat([df_control, aux_control])
 
 
