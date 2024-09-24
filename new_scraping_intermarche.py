@@ -4,6 +4,7 @@ import requests
 import re
 import pandas as pd
 import json
+import os
 
 # url = "https://www.loja-online.intermarche.pt/shelves/frutas-e-legumes/frutas/laranjas-e-outros-citrinos/11510"
 # url = "https://www.loja-online.intermarche.pt/shelves/frutas-e-legumes/frutas/macas-e-peras/11508"
