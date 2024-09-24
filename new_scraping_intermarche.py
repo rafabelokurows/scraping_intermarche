@@ -166,12 +166,12 @@ print(f'There are {levels.shape[0]} categories to scrape')
 #%%
 df_products = pd.DataFrame()
 df_control = pd.DataFrame()
-for index, row in levels.iterrows():
+for index, row in levels.iloc[0:50,].iterrows():
     aux_products = pd.DataFrame()
     print(row['title'])
-    #if index % 10 == 0:
-    #  print(index)
-    #  time.sleep(random.uniform(10, 20))
+    if index % 10 == 0:
+      print(f"Sleep, index: {index}")
+      time.sleep(random.uniform(10, 30))
     url = f"https://www.loja-online.intermarche.pt{row['link']}"
     #print(url)
     #response = requests.request("GET", url, headers=headers, data=payload,verify=False)
@@ -182,11 +182,12 @@ for index, row in levels.iterrows():
         print(f"Final error: {e}")
 
     js_data_matches = re.findall(r'window\.__REACT_ESI__\[.*?\] = (\{.*?\});', response.text, re.DOTALL)
+    filtered_matches = [item for item in js_data_matches if '"list":{"products"' in item]
 
     product_list = []
-
+    print(f'Matches: {len(filtered_matches)}')
     # Step 2: Iterate over each match and extract the products
-    for js_data_str in js_data_matches:
+    for js_data_str in filtered_matches:
         try:
             # Convert the extracted string to a Python dictionary
             js_data = json.loads(js_data_str)
@@ -249,7 +250,7 @@ for index, row in levels.iterrows():
     
                     }])
     df_products = pd.concat([df_products, aux_products])
-    print(f'Products found: {aux_products.shape[0]}')
+    print(f'{row['title']} : {aux_products.shape[0]}') 
     df_control = pd.concat([df_control, aux_control])
 
 
