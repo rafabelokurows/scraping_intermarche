@@ -189,7 +189,7 @@ print(f'There are {levels.shape[0]} categories to scrape')
 errors = 0
 df_products = pd.DataFrame()
 df_control = pd.DataFrame()
-for index, row in levels.iloc[51:100,].iterrows():
+for index, row in levels.iloc[0:100,].iterrows():
     aux_products = pd.DataFrame()
     url = f"https://www.loja-online.intermarche.pt{row['link']}"
     if index % 10 == 0 & index != 0:
