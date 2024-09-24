@@ -213,6 +213,9 @@ for index, row in levels.iloc[0:50,].iterrows():
         print(js_data_matches)
         errors = errors + 1
         print(f"Errors: {errors}")
+        if errors == 3:
+          print(f"Three consecutive rows with no products, stopping iteration.")
+          break
         continue  # Skip to the next iteration
     # Step 2: Iterate over each match and extract the products
     for js_data_str in filtered_matches:
@@ -279,10 +282,6 @@ for index, row in levels.iloc[0:50,].iterrows():
                 }])
     #current_result = len(product_list)
     #last_results.append(current_result)
-    if errors == 3:
-        print(f"Three consecutive rows with no products, stopping iteration.")
-        break
-    
     print(f"{row['title']} : {aux_products.shape[0]}") 
 
     df_products = pd.concat([df_products, aux_products])
