@@ -189,7 +189,7 @@ print(f'There are {levels.shape[0]} categories to scrape')
 errors = 0
 df_products = pd.DataFrame()
 df_control = pd.DataFrame()
-for index, row in levels.iloc[0:100,].iterrows():
+for index, row in levels.iterrows():
     aux_products = pd.DataFrame()
     url = f"https://www.loja-online.intermarche.pt{row['link']}"
     if index % 10 == 0 & index != 0:
@@ -213,9 +213,9 @@ for index, row in levels.iloc[0:100,].iterrows():
         print(js_data_matches)
         errors = errors + 1
         print(f"Errors: {errors}")
-        if errors == 50:
-          print(f"Three consecutive rows with no products, stopping iteration.")
-          break
+        # if errors == 50:
+        #   print(f"Three consecutive rows with no products, stopping iteration.")
+        #   break
         continue  # Skip to the next iteration
     # Step 2: Iterate over each match and extract the products
     for js_data_str in filtered_matches:
