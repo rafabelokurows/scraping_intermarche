@@ -1,5 +1,5 @@
 #%%
-
+from datetime import datetime
 import requests
 import re
 import pandas as pd
@@ -155,6 +155,8 @@ levels = df_categories.query("level == 3")
 df_products = pd.DataFrame()
 for index, row in levels.iloc[0:5,].iterrows():
     print(row['title'])
+    if index % 10 == 0:
+      time.sleep(random.uniform(10, 20))
     url = f"https://www.loja-online.intermarche.pt{row['link']}"
     print(url)
     #response = requests.request("GET", url, headers=headers, data=payload,verify=False)
@@ -224,7 +226,14 @@ for index, row in levels.iloc[0:5,].iterrows():
     aux_products = pd.DataFrame(product_list)
     df_products = pd.concat([df_products, aux_products])
 
-df_products.to_csv("produtos_intermarche.csv", index=False,encoding='utf-8-sig')
+today = datetime.now().strftime("%Y%m%d")
+today_dir = os.path.join("./data/", today)
+print("Salvando ficheiros")
+os.makedirs(today_dir, exist_ok=True)
+filename_csv = os.path.join(today_dir,f"{today}_all_products_intermarche.csv")
+filename_pkl = os.path.join(today_dir,f"{today}_all_products_intermarche.pkl")
+df_products.to_csv(filename_csv,encoding='utf-8-sig', index=False)
+df_products.to_pickle(filename_pkl)
 
 
 #%%
