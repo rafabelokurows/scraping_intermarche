@@ -1,0 +1,97 @@
+﻿index,no_products,id,title
+283,40,10478,Cuidados para o Corpo
+284,40,10786,Desodorizantes e Perfumes
+285,40,10475,Depilação
+286,2,11763,Acessórios
+287,25,10538,Pensos Diários
+288,37,10539,Pensos Higiénicos
+289,18,10540,Tampões
+290,11,10541,Gel e Loções
+291,3,10698,Toalhitas Íntimas
+292,24,11768,Incontinência
+293,40,11316,Barba
+294,14,11317,Rosto
+295,34,11318,Cabelo
+296,25,11383,Gel de Banho
+297,40,11325,Desodorizantes e Perfumes
+298,7,11322,Depilação
+299,14,10529,Bronzeadores
+300,40,10530,Protetores
+301,11,10528,After Sun
+302,10,11777,Criança
+303,32,11400,Primeiros Socorros
+304,3,11401,Desinfetantes
+305,8,11402,Baton e Bálsamos
+306,6,11778,Cotonetes e Soro Fisiológico
+307,36,11779,Preservativos e Outros
+308,31,11780,Papel Higiénico
+309,18,11781,Lenços de Papel
+310,10,11782,Toalhitas
+311,19,11595,Leites Infantis
+312,29,11596,Papas Infantis
+313,15,11597,Alimentos Lácteos
+314,40,11598,"Boiões, Saquetas e Purés de Fruta"
+315,2,11599,Snacks e Bolachinhas
+316,40,11601,Fraldas
+317,18,11602,Toalhitas
+318,35,11603,Banho
+319,2,11604,Higiene Oral
+320,25,11605,Proteção e Hidratação
+321,1,11606,Bacios e Redutores
+322,1,11607,Banheiras e Outros Acessórios
+323,18,11608,Brinquedos Primeira Idade
+324,12,11609,Chupetas e Acessórios de Alimentação
+325,4,11613,"Toalhas, Roupões, Resguardos e Mantas"
+326,40,10659,Ração Seca
+327,24,10658,Comida Húmida
+328,40,10660,Snacks e Biscoitos
+329,4,10657,Acessórios e Brinquedos
+330,40,10663,Ração Seca
+331,40,10662,Comida Húmida
+332,18,10664,Snacks e Biscoitos
+333,9,10666,Areias e Higiene
+334,5,11263,Pássaros
+335,1,11266,Roedores
+336,5,11280,Frutas e Legumes Bio
+337,6,11281,Frutos Secos e Sementes Bio
+338,27,11282,Laticínios e Alternativas Bio
+339,5,11283,"Talho, Peixaria e Alternativas Bio"
+340,12,11284,Bebé e Criança Bio
+341,10,11286,Sobremesas e Apoio à Pastelaria Bio
+342,24,11287,Bebidas e Garrafeira Bio
+343,8,11288,Cereais e Barras Bio
+344,24,11289,Cafés e Chás Bio
+345,6,11290,Doces e Mel Bio
+346,12,11291,Bolachas e Chocolates Bio
+347,25,11292,Ingredientes Culinária Bio
+348,16,11277,Leite e Bebidas Sem Lactose
+349,15,11276,Iogurtes Sem Lactose
+350,7,11274,Queijos Sem Lactose
+351,3,11814,Manteiga e Natas Sem Lactose
+352,1,11278,Sobremesas Sem Lactose
+353,2,11815,Bolachas Sem Lactose
+354,12,11806,Bolachas e Biscoitos
+355,4,11808,"Arroz, Massa e Farinha"
+356,8,11809,"Cereais, Barras e Chocolates"
+357,6,11805,Padaria e Pastelaria
+358,7,11810,Refeições Rápidas
+359,9,11811,Alternativas Queijo e Charcutaria
+360,4,11812,Sobremesas Vegan
+361,4,11813,Ingredientes Vegan
+362,22,10711,Bebidas de Soja
+363,13,10712,Iogurtes e Sobremesas de Soja
+364,3,10863,Cremes e molhos de culinária
+365,7,10713,Outros Produtos de Soja
+366,22,10456,"Massas,Arroz e Leguminosas"
+367,40,10454,"Farinhas, Farelos e Sementes"
+368,40,10455,Flocos e Cereais
+369,40,10450,Bolachas e Biscoitos
+370,40,10451,Chás Medicinais e Infusões
+371,8,10452,Chocolates e Achocolatados
+372,22,10453,Doces e Marmeladas 
+373,40,10458,Suplementos e Vitaminas
+374,24,10906,Refeições
+375,10,10457,Substitutos de refeição
+376,22,10915,Bebidas
+377,8,10621,Decoração para Festas
+378,16,10622,Palhinhas e Velas de Aniversário
