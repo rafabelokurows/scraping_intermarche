@@ -166,11 +166,12 @@ print(f'There are {levels.shape[0]} categories to scrape')
 #%%
 df_products = pd.DataFrame()
 df_control = pd.DataFrame()
-for index, row in levels.iterrows():
+for index, row in levels.iloc[0:20,].iterrows():
+    aux_products = pd.DataFrame()
     print(row['title'])
-    if index % 10 == 0:
-      print(index)
-      time.sleep(random.uniform(10, 20))
+    #if index % 10 == 0:
+    #  print(index)
+    #  time.sleep(random.uniform(10, 20))
     url = f"https://www.loja-online.intermarche.pt{row['link']}"
     #print(url)
     #response = requests.request("GET", url, headers=headers, data=payload,verify=False)
@@ -238,6 +239,7 @@ for index, row in levels.iterrows():
             print("Error decoding JSON for a match.")
     
     aux_products = pd.DataFrame(product_list)
+    print(aux_products)
     aux_control = pd.DataFrame([{
                         'index': index,
                         'no_products': aux_products.shape[0],
