@@ -159,14 +159,14 @@ if match:
     # Step 5: Create a DataFrame from the flattened list
     df_categories = pd.DataFrame(categories_list)
 
-levels = df_categories.query("level == 3")
+levels = df_categories.query("level == 3").reset_index(drop=True)
 print(f'There are {levels.shape[0]} categories to scrape')
 #%%
 
 #%%
 df_products = pd.DataFrame()
 df_control = pd.DataFrame()
-for index, row in levels.iloc[0:20,].iterrows():
+for index, row in levels.iloc[0:50,].iterrows():
     aux_products = pd.DataFrame()
     print(row['title'])
     #if index % 10 == 0:
@@ -243,6 +243,7 @@ for index, row in levels.iloc[0:20,].iterrows():
     aux_control = pd.DataFrame([{
                         'index': index,
                         'no_products': aux_products.shape[0],
+                        'no_list_products': len(product_list),
                         'id': row['id'],
                         'title': row['title']
     
