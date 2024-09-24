@@ -1,0 +1,97 @@
+﻿index,no_products,id,title
+19,10,11528,Tomates e Pimentos
+20,1,11530,Pepinos e Curgetes
+21,1,11534,Ervas Aromáticas
+22,11,11533,Outros Legumes
+23,32,11539,Porco
+24,36,11540,"Novilho, Vitela e Vitelão"
+25,8,11541,Borrego e Cabrito
+26,1,11542,Coelho
+27,40,11543,Aves
+28,16,11544,"Salsichas, Especialidades e Preparados"
+29,6,11545,Bacalhau
+30,40,11546,Peixe
+31,13,11547,Marisco
+32,37,11551,Queijo Fatiado e Bolas
+33,26,11552,Queijo Ralado e Para Barrar
+34,40,11553,Queijo Curado e Amanteigado
+35,15,11554,Snacks
+36,30,11555,Queijo Fresco e Mozzarella
+37,40,11560,Enchidos
+38,23,11558,Fiambre Aves
+39,14,11559,Fiambre Porco
+40,30,11556,Presunto e Bacon
+41,15,11557,"Mortadela, Paio e Chourição"
+42,7,11561,Salsichas
+43,6,11562,Especialidades
+44,34,11566,Pão de Forno
+45,40,11567,Pão de Forma e embalados
+46,33,11568,"Tostas, Croutons e Gressinos"
+47,3,11569,Pão Ralado
+48,30,11570,Pastelaria Doce
+49,12,11571,Pastelaria Salgada
+50,17,11691,Leite Meio Gordo
+51,4,11692,Leite Gordo
+52,17,11693,Leite Magro
+53,4,11694,Leite Proteico
+54,28,11695,Achocolatados e Aromatizados
+55,7,11696,Leites Infantis e Bebidas Lácteas
+56,1,11697,Sem Lactose
+57,40,11753,Bebidas Vegetais
+58,7,11698,Ovos
+59,29,11706,Manteigas
+60,21,11707,Cremes Vegetais e para Barrar
+61,18,11703,Natas Culinária e Bechamel
+62,3,11704,Margarinas
+63,17,11705,Natas para Bater e Chantilly
+64,40,10400,Iogurtes Líquidos
+65,24,10395,Iogurtes Aromas e Naturais
+66,13,10396,Iogurtes Pedaços
+67,12,10397,Iogurtes Magros
+68,14,10398,Iogurtes Bifidus
+69,20,11178,Iogurtes Infantis
+70,33,11176,Iogurtes Gregos e Kefir
+71,37,11177,Iogurtes Proteicos
+72,6,11175,Iogurtes sem Lactose
+73,19,11818,Vegegurtes e Yofu
+74,27,10719,Mousses e Pudins
+75,22,10800,Gelatinas
+76,1,11799,Fruta
+77,35,11715,Arroz
+78,40,11716,Massa
+79,40,11717,Farinha
+80,26,11718,Azeite
+81,9,11719,Óleo Alimentar
+82,29,11720,Vinagre
+83,40,11721,Molhos
+84,39,11757,Temperos
+85,36,11722,"Maionese, Ketchup e Mostarda"
+86,40,11723,Especiarias e Ervas Aromáticas
+87,30,11724,Caldos
+88,17,11725,Sal
+89,9,10242,Feijão
+90,1,10243,Grão
+91,1,11021,Lentilhas
+92,8,11817,Sementes
+93,40,10273,Café em Cápsulas
+94,32,11058,Café Torrado
+95,24,10271,Café Solúvel
+96,17,11057,Bebidas de Cereais
+97,40,11736,Chás e Infusões
+98,8,11745,Chocolate em Pó
+99,40,10292,Açúcar e Adoçantes
+100,16,11737,Chocolate e Cacau de Culinária
+101,14,11738,Farinha e Fermento
+102,7,11739,"Aromas, Toppings e Corantes"
+103,34,11740,Gelatinas
+104,35,11741,Bolos e Sobremesas
+105,29,11742,Coberturas e Decoração
+106,14,11743,Leite Condensado
+107,15,11744,Fruta em Calda
+108,29,10260,Cereais Infantis e Juvenis
+109,38,11050,Cereais Linha e Fibra
+110,9,11052,Muesli e Granola
+111,18,11053,Flocos e Papas
+112,36,11054,Barras de Cereais
+113,40,11072,Doces e Compotas
+114,12,10318,Marmelada e Goiabada
