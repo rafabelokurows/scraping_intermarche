@@ -8,6 +8,7 @@ import os
 import time
 import random
 import urllib3
+from collections import deque
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning) 
 
 # url = "https://www.loja-online.intermarche.pt/shelves/frutas-e-legumes/frutas/laranjas-e-outros-citrinos/11510"
@@ -51,70 +52,7 @@ def make_request(url, headers, payload, max_retries=3):
             if retries < max_retries:
                 print(f"Retrying ({retries}/{max_retries})...")
     raise Exception(f"Failed to make request to {url} after {max_retries} attempts")
-
-
-# response = requests.request("GET", url, headers=headers, data=payload,verify=False)
-
-# print(response.text)
-
 #%%
-
-# #%%
-
-# js_data_matches = re.findall(r'window\.__REACT_ESI__\[.*?\] = (\{.*?\});', response.text, re.DOTALL)
-
-# product_list = []
-
-# # Step 2: Iterate over each match and extract the products
-# for js_data_str in js_data_matches:
-#     try:
-#         # Convert the extracted string to a Python dictionary
-#         js_data = json.loads(js_data_str)
-        
-#         # Access the products list
-#         products = js_data.get('list', {}).get('products', [])
-        
-#         # Step 3: Extract details from each product
-#         for product in products:
-#             product_id = product.get('id')
-#             title = product.get('informations', {}).get('title')
-#             ean = product.get('ean')
-#             packaging = product.get('informations', {}).get('packaging')
-#             brand = product.get('informations', {}).get('brand')
-#             category = product.get('informations', {}).get('category')
-#             price = product.get('prices', {}).get('unitPrice', {}).get('concatenated')
-#             price_per_unit = product.get('prices', {}).get('productPrice', {}).get('concatenated')
-#             image_url = product.get('informations', {}).get('allImages', [{}])[0].get('src')
-#             #origin = product.get('informations', {}).get('originPlp')
-#             product_url = product.get('url')
-            
-#             product_list.append({
-#                 'Product ID': product_id,
-#                 'EAN': ean,
-#                 'Packaging': packaging,
-#                 'Brand': brand,
-#                 'Category': category,
-#                 'Title': title,
-#                 'Price': price,
-#                 'Price Per Unit': price_per_unit,
-#                 'Image URL': image_url,
-#                 #'Origin': origin,
-#                 'Product URL': product_url
-#             })
-
-#             # Print or store the extracted data
-#             # print(f"Product ID: {product_id}")
-#             # print(f"Title: {title}")
-#             # print(f"Price: {price}")
-#             # print(f"Image URL: {image_url}")
-#             # print(f"Origin: {origin}")
-#             # print("-" * 40)
-#     except json.JSONDecodeError:
-#         print("Error decoding JSON for a match.")
-
-# df_products = pd.DataFrame(product_list)
-# df_products
-# #%%
 
 #%%
 #### ENCONTRANDO CATEGORIAS ####
@@ -164,14 +102,99 @@ print(f'There are {levels.shape[0]} categories to scrape')
 #%%
 
 #%%
+# df_products = pd.DataFrame()
+# df_control = pd.DataFrame()
+# for index, row in levels.iterrows():
+#     aux_products = pd.DataFrame()
+#     if index % 10 == 0:
+#       print(f"Sleep, index: {index}")
+#       time.sleep(random.uniform(20, 60))
+#     url = f"https://www.loja-online.intermarche.pt{row['link']}"
+#     #print(url)
+#     #response = requests.request("GET", url, headers=headers, data=payload,verify=False)
+#     try:
+#         response = make_request(url, headers, payload)
+#     except Exception as e:
+#         print(f"Final error: {e}")
+
+#     js_data_matches = re.findall(r'window\.__REACT_ESI__\[.*?\] = (\{.*?\});', response.text, re.DOTALL)
+#     filtered_matches = [item for item in js_data_matches if '"list":{"products"' in item]
+
+#     product_list = []
+#     print(f'Matches: {len(filtered_matches)}')
+#     if len(filtered_matches) == 0:
+#       print(js_data_matches)
+#     # Step 2: Iterate over each match and extract the products
+#     for js_data_str in filtered_matches:
+#         try:
+#             # Convert the extracted string to a Python dictionary
+#             js_data = json.loads(js_data_str)
+            
+#             # Access the products list
+#             products = js_data.get('list', {}).get('products', [])
+            
+#             # Step 3: Extract details from each product
+#             for product in products:
+#                 product_id = product.get('id')
+#                 title = product.get('informations', {}).get('title')
+#                 ean = product.get('ean')
+#                 family = product.get('famillyId')
+#                 department = product.get('departmentId')
+#                 packaging = product.get('informations', {}).get('packaging')
+#                 brand = product.get('informations', {}).get('brand')
+#                 category = product.get('informations', {}).get('category')
+#                 price = product.get('prices', {}).get('unitPrice', {}).get('concatenated')
+#                 price_per_unit = product.get('prices', {}).get('productPrice', {}).get('concatenated')
+#                 image_url = product.get('informations', {}).get('allImages', [{}])[0].get('src')
+#                 promo_end = product.get('informations', {}).get('highlight', {}).get('endDate')
+#                 #origin = product.get('informations', {}).get('originPlp')
+#                 product_url = product.get('url')
+                
+#                 product_list.append({
+#                     'Product ID': product_id,
+#                     'Title': title,
+#                     'EAN': ean,
+#                     'Family ID': family,
+#                     'Department ID': department,
+#                     'Packaging': packaging,
+#                     'Brand': brand,
+#                     'Category': category,
+#                     'Price': price,
+#                     'Price Per Unit': price_per_unit,
+#                     'Image URL': image_url,
+#                     'Promo End': promo_end,
+#                     #'Origin': origin,
+#                     'Product URL': product_url
+#                 })
+
+#         except json.JSONDecodeError:
+#             print("Error decoding JSON for a match.")
+    
+#     aux_products = pd.DataFrame(product_list)
+#     print(aux_products)
+#     aux_control = pd.DataFrame([{
+#                         'index': index,
+#                         'no_products': aux_products.shape[0],
+#                         'no_list_products': len(product_list),
+#                         'id': row['id'],
+#                         'title': row['title']
+    
+#                     }])
+#     df_products = pd.concat([df_products, aux_products])
+#     print(f"{row['title']}: {aux_products.shape[0]}") 
+#     df_control = pd.concat([df_control, aux_control])
+
+
+last_results = deque(maxlen=3)
+
 df_products = pd.DataFrame()
 df_control = pd.DataFrame()
-for index, row in levels.iterrows():
+for index, row in levels.iloc[0:50,].iterrows():
     aux_products = pd.DataFrame()
-    if index % 10 == 0:
-      print(f"Sleep, index: {index}")
-      time.sleep(random.uniform(20, 60))
     url = f"https://www.loja-online.intermarche.pt{row['link']}"
+    if index % 10 == 0 & index != 0:
+        print(f"Sleep, index: {index}")
+        #time.sleep(random.uniform(20, 60))
     #print(url)
     #response = requests.request("GET", url, headers=headers, data=payload,verify=False)
     try:
@@ -181,12 +204,14 @@ for index, row in levels.iterrows():
         print(f"Final error: {e}")
 
     js_data_matches = re.findall(r'window\.__REACT_ESI__\[.*?\] = (\{.*?\});', response.text, re.DOTALL)
+
     filtered_matches = [item for item in js_data_matches if '"list":{"products"' in item]
 
     product_list = []
-    print(f'Matches: {len(filtered_matches)}')
+
     if len(filtered_matches) == 0:
-      print(js_data_matches)
+        print(js_data_matches)
+        continue  # Skip to the next iteration
     # Step 2: Iterate over each match and extract the products
     for js_data_str in filtered_matches:
         try:
@@ -230,6 +255,8 @@ for index, row in levels.iterrows():
                     'Product URL': product_url
                 })
 
+                
+
                 # Print or store the extracted data
                 # print(f"Product ID: {product_id}")
                 # print(f"Title: {title}")
@@ -239,21 +266,25 @@ for index, row in levels.iterrows():
                 # print("-" * 40)
         except json.JSONDecodeError:
             print("Error decoding JSON for a match.")
-    
-    aux_products = pd.DataFrame(product_list)
-    print(aux_products)
-    aux_control = pd.DataFrame([{
-                        'index': index,
-                        'no_products': aux_products.shape[0],
-                        'no_list_products': len(product_list),
-                        'id': row['id'],
-                        'title': row['title']
-    
-                    }])
-    df_products = pd.concat([df_products, aux_products])
-    print(f"{row['title']}: {aux_products.shape[0]}") 
-    df_control = pd.concat([df_control, aux_control])
 
+    aux_products = pd.DataFrame(product_list)
+    aux_control = pd.DataFrame([{
+                    'index': index,
+                    'no_products': aux_products.shape[0],
+                    'id': row['id'],
+                    'title': row['title']
+
+                }])
+    current_result = len(product_list)
+    last_results.append(current_result)
+    if all(result == 0 for result in last_results):
+        print(f"Three consecutive rows with no products, stopping iteration.")
+        break
+    
+    print(f'{row['title']} : {aux_products.shape[0]}') 
+
+    df_products = pd.concat([df_products, aux_products])
+    df_control = pd.concat([df_control, aux_control])
 
 
 today = datetime.now().strftime("%Y%m%d")
