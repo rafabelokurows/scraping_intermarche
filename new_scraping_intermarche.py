@@ -307,7 +307,7 @@ for index, row in levels.iloc[last_exec:,].iterrows():
     df_products = pd.concat([df_products, aux_products])
     df_control = pd.concat([df_control, aux_control])
 
-
+last_exec = str(last_exec)
 if (index < levels.shape[0]):
   with open('./log/last_execution_all.txt', 'w') as f:
         f.write(last_exec)
