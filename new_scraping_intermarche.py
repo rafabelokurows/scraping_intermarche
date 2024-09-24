@@ -185,8 +185,8 @@ print(f'There are {levels.shape[0]} categories to scrape')
 #     df_control = pd.concat([df_control, aux_control])
 
 
-last_results = deque(maxlen=3)
-
+#last_results = deque(maxlen=3)
+errors = 0
 df_products = pd.DataFrame()
 df_control = pd.DataFrame()
 for index, row in levels.iloc[0:50,].iterrows():
@@ -211,6 +211,8 @@ for index, row in levels.iloc[0:50,].iterrows():
 
     if len(filtered_matches) == 0:
         print(js_data_matches)
+        errors = errors + 1
+        print(f"Errors: {errors}")
         continue  # Skip to the next iteration
     # Step 2: Iterate over each match and extract the products
     for js_data_str in filtered_matches:
@@ -275,9 +277,9 @@ for index, row in levels.iloc[0:50,].iterrows():
                     'title': row['title']
 
                 }])
-    current_result = len(product_list)
-    last_results.append(current_result)
-    if all(result == 0 for result in last_results):
+    #current_result = len(product_list)
+    #last_results.append(current_result)
+    if errors == 3:
         print(f"Three consecutive rows with no products, stopping iteration.")
         break
     
