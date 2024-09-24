@@ -189,7 +189,7 @@ print(f'There are {levels.shape[0]} categories to scrape')
 errors = 0
 df_products = pd.DataFrame()
 df_control = pd.DataFrame()
-for index, row in levels.iloc[51:70,].iterrows():
+for index, row in levels.iloc[51:100,].iterrows():
     aux_products = pd.DataFrame()
     url = f"https://www.loja-online.intermarche.pt{row['link']}"
     if index % 10 == 0 & index != 0:
@@ -288,13 +288,14 @@ for index, row in levels.iloc[51:70,].iterrows():
     df_control = pd.concat([df_control, aux_control])
 
 
-today = datetime.now().strftime("%Y%m%d%h%s")
+today = datetime.now().strftime("%Y%m%d")
 today_dir = os.path.join("./data/", today)
+today_hour = datetime.now().strftime("%Y%m%d%H%s")
 print("Salvando ficheiros")
 os.makedirs(today_dir, exist_ok=True)
-filename_csv = os.path.join(today_dir,f"{today}_all_products_intermarche.csv")
-filename_pkl = os.path.join(today_dir,f"{today}_all_products_intermarche.pkl")
-filename_cat_csv = os.path.join(today_dir,f"{today}_df_categories_intermarche.csv")
+filename_csv = os.path.join(today_dir,f"{today_hour}_all_products_intermarche.csv")
+filename_pkl = os.path.join(today_dir,f"{today_hour}_all_products_intermarche.pkl")
+filename_cat_csv = os.path.join(today_dir,f"{today_hour}_df_categories_intermarche.csv")
 df_products.to_csv(filename_csv,encoding='utf-8-sig', index=False)
 df_products.to_pickle(filename_pkl)
 df_control.reset_index(drop=True).to_csv(filename_cat_csv, index=False,encoding='utf-8-sig')
