@@ -113,7 +113,13 @@ def make_request(url, headers, payload, max_retries=3):
 
 #%%
 #### ENCONTRANDO CATEGORIAS ####
-match = re.search(r'window\.__REACT_ESI__\[.*?\] = \{.*?"categories":(.*?)};\s*document\.currentScript\.remove\(\);', html_content, re.DOTALL)
+starting_url = "https://www.loja-online.intermarche.pt/shelves/frutas-e-legumes/frutas/laranjas-e-outros-citrinos/11510"
+try:
+    response = make_request(starting_url, headers, payload)
+    # Process the response
+except Exception as e:
+    print(f"Final error: {e}")
+match = re.search(r'window\.__REACT_ESI__\[.*?\] = \{.*?"categories":(.*?)};\s*document\.currentScript\.remove\(\);', response.text, re.DOTALL)
 
 if match:
     categories_json_str = match.group(1).strip()
