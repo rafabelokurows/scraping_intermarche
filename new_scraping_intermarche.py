@@ -156,6 +156,7 @@ df_products = pd.DataFrame()
 for index, row in levels.iloc[0:5,].iterrows():
     print(row['title'])
     if index % 10 == 0:
+      print(index)
       time.sleep(random.uniform(10, 20))
     url = f"https://www.loja-online.intermarche.pt{row['link']}"
     print(url)
