@@ -123,8 +123,8 @@ if last_exec == 0:
     print(f'There are {levels.shape[0]} categories to scrape')
     levels.to_csv(f'./data/{today}/categories.csv',encoding='utf-8-sig', index=False)
 else:
-    print("File 'df_categories_intermarche.csv' exists in the folder 'c:/Users/BELOKUROWSR/Desktop/inter/scraping_intermarche/'.")
-    df_categories = pd.read_csv(f'./data/{today}/categories.csv')
+    print("File 'df_categories_intermarche.csv' exists in the folder'.")
+    levels = pd.read_csv(f'./data/{today}/categories.csv')
 #%%
 
 #%%
