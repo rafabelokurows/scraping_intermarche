@@ -68,7 +68,7 @@ if os.path.exists(log_file):
     print(f"File '{today}.txt' exists in the folder log")
     with open(log_file, 'r') as file:
       last_exec = file.readline().strip()
-    last_exec = int(last_exec)
+    last_exec = int(last_exec)+1
     print(f"Last exec: {last_exec}")
 else:
     last_exec = 0
@@ -160,7 +160,7 @@ df_control = pd.DataFrame()
 for index, row in levels.iloc[last_exec:,].iterrows():
     aux_products = pd.DataFrame()
     url = f"https://www.loja-online.intermarche.pt{row['link']}"
-    
+        
     #print(url)
     #response = requests.request("GET", url, headers=headers, data=payload,verify=False)
     #ua = ua_generator.generate(browser=('chrome', 'edge'))
@@ -232,10 +232,12 @@ for index, row in levels.iloc[last_exec:,].iterrows():
 
         except json.JSONDecodeError:
             print("Error decoding JSON for a match.")
+        
+        if index % 10 == 0 & index != 0:
+            print(f"Sleep, index: {index}")
+            time.sleep(random.uniform(20, 60))
 
-    if index % 10 == 0 & index != 0:
-        print(f"Sleep, index: {index}")
-        time.sleep(random.uniform(20, 60))
+    
 
     aux_products = pd.DataFrame(product_list)
     aux_control = pd.DataFrame([{
