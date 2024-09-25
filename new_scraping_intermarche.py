@@ -149,144 +149,147 @@ else:
 #print(f'Last exec: {last_exec}')
 #last_results = deque(maxlen=3)
 
-s = requests.Session()
-s.headers.update(headers)
-errors = 0
-df_products = pd.DataFrame()
-df_control = pd.DataFrame()
-#%%
+if (last_exec-1) < levels.shape[0]:
+    print("There are still pages to scrape")
+    s = requests.Session()
+    s.headers.update(headers)
+    errors = 0
+    df_products = pd.DataFrame()
+    df_control = pd.DataFrame()
 
-#%%
-for index, row in levels.iloc[last_exec:,].iterrows():
-    aux_products = pd.DataFrame()
-    url = f"https://www.loja-online.intermarche.pt{row['link']}"
-        
-    #print(url)
-    #response = requests.request("GET", url, headers=headers, data=payload,verify=False)
-    #ua = ua_generator.generate(browser=('chrome', 'edge'))
-    #s.headers.update(ua.headers.get())
-    print(index)
-    print(s.headers)
-    # Making the POST request
-    try:
-        response = make_request(url, s.headers , payload)
-        # Process the response
-    except Exception as e:
-        print(f"Final error: {e}")
 
-    js_data_matches = re.findall(r'window\.__REACT_ESI__\[.*?\] = (\{.*?\});', response.text, re.DOTALL)
-
-    filtered_matches = [item for item in js_data_matches if '"list":{"products"' in item]
-
-    product_list = []
-
-    if len(filtered_matches) == 0:
-        print(js_data_matches)
-        errors = errors + 1
-        print(f"Errors: {errors}")
-        if errors == 3:
-          print(f"Three consecutive rows with no products, stopping iteration.")
-          last_exec = index-3
-          break
-        continue  # Skip to the next iteration
-    # Step 2: Iterate over each match and extract the products
-    for js_data_str in filtered_matches:
+    for index, row in levels.iloc[last_exec:,].iterrows():
+        aux_products = pd.DataFrame()
+        url = f"https://www.loja-online.intermarche.pt{row['link']}"
+            
+        #print(url)
+        #response = requests.request("GET", url, headers=headers, data=payload,verify=False)
+        #ua = ua_generator.generate(browser=('chrome', 'edge'))
+        #s.headers.update(ua.headers.get())
+        print(index)
+        print(s.headers)
+        # Making the POST request
         try:
-            # Convert the extracted string to a Python dictionary
-            js_data = json.loads(js_data_str)
-            
-            # Access the products list
-            products = js_data.get('list', {}).get('products', [])
-            
-            # Step 3: Extract details from each product
-            for product in products:
-                product_id = product.get('id')
-                title = product.get('informations', {}).get('title')
-                ean = product.get('ean')
-                family = product.get('famillyId')
-                department = product.get('departmentId')
-                packaging = product.get('informations', {}).get('packaging')
-                brand = product.get('informations', {}).get('brand')
-                category = product.get('informations', {}).get('category')
-                price = product.get('prices', {}).get('unitPrice', {}).get('concatenated')
-                price_per_unit = product.get('prices', {}).get('productPrice', {}).get('concatenated')
-                image_url = product.get('informations', {}).get('allImages', [{}])[0].get('src')
-                promo_end = product.get('informations', {}).get('highlight', {}).get('endDate')
-                product_url = product.get('url')
+            response = make_request(url, s.headers , payload)
+            # Process the response
+        except Exception as e:
+            print(f"Final error: {e}")
+
+        js_data_matches = re.findall(r'window\.__REACT_ESI__\[.*?\] = (\{.*?\});', response.text, re.DOTALL)
+
+        filtered_matches = [item for item in js_data_matches if '"list":{"products"' in item]
+
+        product_list = []
+
+        if len(filtered_matches) == 0:
+            print(js_data_matches)
+            errors = errors + 1
+            print(f"Errors: {errors}")
+            if errors == 3:
+                print(f"Three consecutive rows with no products, stopping iteration.")
+                last_exec = index-3
+                break
+            continue  # Skip to the next iteration
+        # Step 2: Iterate over each match and extract the products
+        for js_data_str in filtered_matches:
+            try:
+                # Convert the extracted string to a Python dictionary
+                js_data = json.loads(js_data_str)
                 
-                product_list.append({
-                    'Product ID': product_id,
-                    'Title': title,
-                    'EAN': ean,
-                    'Family ID': family,
-                    'Department ID': department,
-                    'Packaging': packaging,
-                    'Brand': brand,
-                    'Category': category,
-                    'Price': price,
-                    'Price Per Unit': price_per_unit,
-                    'Image URL': image_url,
-                    'Promo End': promo_end,
-                    'Product URL': product_url
-                })
+                # Access the products list
+                products = js_data.get('list', {}).get('products', [])
+                
+                # Step 3: Extract details from each product
+                for product in products:
+                    product_id = product.get('id')
+                    title = product.get('informations', {}).get('title')
+                    ean = product.get('ean')
+                    family = product.get('famillyId')
+                    department = product.get('departmentId')
+                    packaging = product.get('informations', {}).get('packaging')
+                    brand = product.get('informations', {}).get('brand')
+                    category = product.get('informations', {}).get('category')
+                    price = product.get('prices', {}).get('unitPrice', {}).get('concatenated')
+                    price_per_unit = product.get('prices', {}).get('productPrice', {}).get('concatenated')
+                    image_url = product.get('informations', {}).get('allImages', [{}])[0].get('src')
+                    promo_end = product.get('informations', {}).get('highlight', {}).get('endDate')
+                    product_url = product.get('url')
+                    
+                    product_list.append({
+                        'Product ID': product_id,
+                        'Title': title,
+                        'EAN': ean,
+                        'Family ID': family,
+                        'Department ID': department,
+                        'Packaging': packaging,
+                        'Brand': brand,
+                        'Category': category,
+                        'Price': price,
+                        'Price Per Unit': price_per_unit,
+                        'Image URL': image_url,
+                        'Promo End': promo_end,
+                        'Product URL': product_url
+                    })
 
-        except json.JSONDecodeError:
-            print("Error decoding JSON for a match.")
+            except json.JSONDecodeError:
+                print("Error decoding JSON for a match.")
+            
+            if index % 10 == 0 & index != 0:
+                print(f"Sleep, index: {index}")
+                time.sleep(random.uniform(20, 60))
+
         
-        if index % 10 == 0 & index != 0:
-            print(f"Sleep, index: {index}")
-            time.sleep(random.uniform(20, 60))
 
-    
+        aux_products = pd.DataFrame(product_list)
+        aux_control = pd.DataFrame([{
+                        'index': index,
+                        'no_products': aux_products.shape[0],
+                        'id': row['id'],
+                        'title': row['title']
 
-    aux_products = pd.DataFrame(product_list)
-    aux_control = pd.DataFrame([{
-                    'index': index,
-                    'no_products': aux_products.shape[0],
-                    'id': row['id'],
-                    'title': row['title']
+                    }])
+        print(f"{row['title']} : {aux_products.shape[0]}") 
 
-                }])
-    print(f"{row['title']} : {aux_products.shape[0]}") 
+        df_products = pd.concat([df_products, aux_products])
+        df_control = pd.concat([df_control, aux_control])
 
-    df_products = pd.concat([df_products, aux_products])
-    df_control = pd.concat([df_control, aux_control])
+    s.close()
 
-s.close()
-#%%
+    new_control = levels.merge(df_control,how="left")
+    if not last_exec:
+        last_exec = index
+    last_exec = str(last_exec)
+    print(f'Index: {index}')
+    print(f'Size of levels file: {levels.shape[0]}')
 
-#%%
-new_control = levels.merge(df_control,how="left")
-if not last_exec:
-    last_exec = index
-last_exec = str(last_exec)
-print(f'Index: {index}')
-print(f'Size of levels file: {levels.shape[0]}')
+    if (int(index)+1 < levels.shape[0]):
+        last_exec = levels.shape[0]
+        print(f"The show must go on! Last exec: {last_exec}")
+        with open(os.path.join(f"./log/",f"{today}.txt"), 'w') as f:
+                f.write(last_exec)
+    elif (int(index)+1 == levels.shape[0]):
+        last_exec = levels.shape[0]
+        print(f"Finished for today! Last exec: {last_exec}")
+        with open(os.path.join(f"./log/",f"{today}.txt"), 'w') as f:
+                f.write(last_exec)
 
-if (index < levels.shape[0]):
-    print(f"The show must go on! Last exec: {last_exec}")
-    with open(os.path.join(f"./log/",f"{today}.txt"), 'w') as f:
-            f.write(last_exec)
-elif (index == levels.shape[0]):
-    print(f"Finished for today! Last exec: {last_exec}")
-    with open(os.path.join(f"./log/",f"{today}.txt"), 'w') as f:
-            f.write(levels.shape[0])
+    file_name_final = os.path.join(today_dir,f"{today}_all_products_intermarche.csv")
+    if os.path.exists(file_name_final):
+        previous_df = pd.read_csv(file_name_final)
+        df_products = pd.concat([previous_df,df_products]).reset_index(drop=True)
+        print(f"File '{file_name_final}' exists in the folder: {df_products.shape[0]} products in total")
+    else:
+        print(f"File '{file_name_final}' did not exist in the folder, creating new file: {df_products.shape[0]} products in total")
 
-file_name_final = os.path.join(today_dir,f"{today}_all_products_intermarche.csv")
-if os.path.exists(file_name_final):
-    previous_df = pd.read_csv(file_name_final)
-    df_products = pd.concat([previous_df,df_products]).reset_index(drop=True)
-    print(f"File '{file_name_final}' exists in the folder: {df_products.shape[0]} products in total")
+
+    print("Salvando ficheiros")
+    os.makedirs(today_dir, exist_ok=True)
+    filename_csv = os.path.join(today_dir,f"{today}_all_products_intermarche.csv")
+    filename_pkl = os.path.join(today_dir,f"{today}_all_products_intermarche.pkl")
+    filename_cat_csv = os.path.join(today_dir,'categories.csv')
+    df_products.to_csv(filename_csv,encoding='utf-8-sig', index=False)
+    df_products.to_pickle(filename_pkl)
+    new_control.reset_index(drop=True).to_csv(filename_cat_csv, index=False,encoding='utf-8-sig')
 else:
-    print(f"File '{file_name_final}' did not exist in the folder, creating new file: {df_products.shape[0]} products in total")
-
-
-print("Salvando ficheiros")
-os.makedirs(today_dir, exist_ok=True)
-filename_csv = os.path.join(today_dir,f"{today}_all_products_intermarche.csv")
-filename_pkl = os.path.join(today_dir,f"{today}_all_products_intermarche.pkl")
-filename_cat_csv = os.path.join(today_dir,'categories.csv')
-df_products.to_csv(filename_csv,encoding='utf-8-sig', index=False)
-df_products.to_pickle(filename_pkl)
-new_control.reset_index(drop=True).to_csv(filename_cat_csv, index=False,encoding='utf-8-sig')
+    print("There are no more pages to scrape")
 #%%
