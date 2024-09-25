@@ -157,7 +157,7 @@ df_control = pd.DataFrame()
 #%%
 
 #%%
-for index, row in levels.iloc[last_exec:20,].iterrows():
+for index, row in levels.iloc[last_exec:,].iterrows():
     aux_products = pd.DataFrame()
     url = f"https://www.loja-online.intermarche.pt{row['link']}"
     
