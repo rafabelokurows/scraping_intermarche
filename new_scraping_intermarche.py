@@ -260,6 +260,8 @@ new_control = levels.merge(df_control,how="left")
 if not last_exec:
     last_exec = index
 last_exec = str(last_exec)
+print(f'Index: {index}')
+print(f'Size of levels file: {levels.shape[0]}')
 
 if (index < levels.shape[0]):
     print(f"The show must go on! Last exec: {last_exec}")
