@@ -265,7 +265,7 @@ if (last_exec-1) < levels.shape[0]:
     print(f'Size of total levels file: {levels.shape[0]}')
 
     if (int(index)+1 < levels.shape[0]):
-        last_exec = int(index)+1
+        last_exec = str(int(index)+1)
         print(f"The show must go on! Last exec: {last_exec}")
         with open(os.path.join(f"./log/",f"{today}.txt"), 'w') as f:
                 f.write(last_exec)
