@@ -189,6 +189,7 @@ if (last_exec-1) < levels.shape[0]:
             if errors == 3:
                 print(f"Three consecutive rows with no products, stopping iteration.")
                 last_exec = index-3
+                has_error = True
                 break
             continue  # Skip to the next iteration
         # Step 2: Iterate over each match and extract the products
