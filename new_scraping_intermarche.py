@@ -58,6 +58,7 @@ def make_request(url, headers, payload, max_retries=3):
 today = datetime.now().strftime("%Y%m%d")
 today_dir = os.path.join("./data/", today)
 today_hour = datetime.now().strftime("%Y%m%d%H%M")
+os.makedirs(today_dir, exist_ok=True)
 #%%
 
 #%%
@@ -283,7 +284,6 @@ if (last_exec-1) < levels.shape[0]:
 
 
     print("Salvando ficheiros")
-    os.makedirs(today_dir, exist_ok=True)
     filename_csv = os.path.join(today_dir,f"{today}_all_products_intermarche.csv")
     filename_pkl = os.path.join(today_dir,f"{today}_all_products_intermarche.pkl")
     filename_cat_csv = os.path.join(today_dir,'categories.csv')
