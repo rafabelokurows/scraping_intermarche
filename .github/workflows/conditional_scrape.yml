@@ -48,7 +48,7 @@ jobs:
         if: steps.check_date.outputs.file_has_today_date == 'false'
         uses: actions/setup-python@v2
         with:
-          python-version: '3.7.15' # install the python version needed
+          python-version: '3.7.17' # install the python version needed
           
       - name: install python packages
         if: steps.check_date.outputs.file_has_today_date == 'false'
