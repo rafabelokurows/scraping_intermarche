@@ -1,0 +1,445 @@
+﻿level,isPromo,id,key,title,slug,link,picto,hasAlcohol,index,no_products
+3,False,11539,11539,Porco,porco,/shelves/talho-e-peixaria/talho/porco/11539,,,0.0,37.0
+3,False,11540,11540,"Novilho, Vitela e Vitelão",novilho-vitela-e-vitelao,/shelves/talho-e-peixaria/talho/novilho-vitela-e-vitelao/11540,,,1.0,26.0
+3,False,11541,11541,Borrego e Cabrito,borrego-e-cabrito,/shelves/talho-e-peixaria/talho/borrego-e-cabrito/11541,,,2.0,1.0
+3,False,11542,11542,Coelho,coelho,/shelves/talho-e-peixaria/talho/coelho/11542,,,3.0,1.0
+3,False,11543,11543,Aves,aves,/shelves/talho-e-peixaria/talho/aves/11543,,,4.0,36.0
+3,False,11544,11544,"Salsichas, Especialidades e Preparados",salsichas-especialidades-e-preparados,/shelves/talho-e-peixaria/talho/salsichas-especialidades-e-preparados/11544,,,5.0,28.0
+3,False,11545,11545,Bacalhau,bacalhau,/shelves/talho-e-peixaria/peixaria/bacalhau/11545,,,6.0,7.0
+3,False,11546,11546,Peixe,peixe,/shelves/talho-e-peixaria/peixaria/peixe/11546,,,7.0,40.0
+3,False,11547,11547,Marisco,marisco,/shelves/talho-e-peixaria/peixaria/marisco/11547,,,8.0,12.0
+3,False,11508,11508,Maçãs e Peras,macas-e-peras,/shelves/frutas-e-legumes/frutas/macas-e-peras/11508,,,9.0,24.0
+3,False,11510,11510,Laranjas e Outros Citrinos,laranjas-e-outros-citrinos,/shelves/frutas-e-legumes/frutas/laranjas-e-outros-citrinos/11510,,,10.0,4.0
+3,False,11511,11511,Bananas e Kiwis,bananas-e-kiwis,/shelves/frutas-e-legumes/frutas/bananas-e-kiwis/11511,,,11.0,7.0
+3,False,11512,11512,"Pêssegos, Nectarinas e Ameixas",pessegos-nectarinas-e-ameixas,/shelves/frutas-e-legumes/frutas/pessegos-nectarinas-e-ameixas/11512,,,12.0,10.0
+3,False,11509,11509,Limões e Limas,limoes-e-limas,/shelves/frutas-e-legumes/frutas/limoes-e-limas/11509,,,13.0,2.0
+3,False,11513,11513,Ananás e Abacaxi,ananas-e-abacaxi,/shelves/frutas-e-legumes/frutas/ananas-e-abacaxi/11513,,,14.0,4.0
+3,False,11514,11514,Frutos Vermelhos,frutos-vermelhos,/shelves/frutas-e-legumes/frutas/frutos-vermelhos/11514,,,15.0,3.0
+3,False,11515,11515,Uvas,uvas,/shelves/frutas-e-legumes/frutas/uvas/11515,,,16.0,7.0
+3,False,11516,11516,"Melão, Meloa e Melancia",melao-meloa-e-melancia,/shelves/frutas-e-legumes/frutas/melao-meloa-e-melancia/11516,,,17.0,9.0
+3,False,11517,11517,Outros Frutos da Época,outros-frutos-da-epoca,/shelves/frutas-e-legumes/frutas/outros-frutos-da-epoca/11517,,,18.0,1.0
+3,False,11518,11518,Frutas Tropicais e Exóticas,frutas-tropicais-e-exoticas,/shelves/frutas-e-legumes/frutas/frutas-tropicais-e-exoticas/11518,,,19.0,12.0
+3,False,11519,11519,Frutos Secos e Desidratados,frutos-secos-e-desidratados,/shelves/frutas-e-legumes/frutas/frutos-secos-e-desidratados/11519,,,20.0,7.0
+3,False,11532,11532,Legumes e Saladas Embaladas,legumes-e-saladas-embaladas,/shelves/frutas-e-legumes/legumes/legumes-e-saladas-embaladas/11532,,,21.0,30.0
+3,False,11531,11531,Alfaces e Rúcula,alfaces-e-rucula,/shelves/frutas-e-legumes/legumes/alfaces-e-rucula/11531,,,22.0,21.0
+3,False,11522,11522,Batatas,batatas,/shelves/frutas-e-legumes/legumes/batatas/11522,,,23.0,4.0
+3,False,11523,11523,Cebolas e Alhos,cebolas-e-alhos,/shelves/frutas-e-legumes/legumes/cebolas-e-alhos/11523,,,24.0,7.0
+3,False,11524,11524,Couves e Feijão Verde,couves-e-feijao-verde,/shelves/frutas-e-legumes/legumes/couves-e-feijao-verde/11524,,,25.0,12.0
+3,False,11525,11525,Nabos e Grelos,nabos-e-grelos,/shelves/frutas-e-legumes/legumes/nabos-e-grelos/11525,,,26.0,4.0
+3,False,11526,11526,Agrião e Alho Francês,agriao-e-alho-frances,/shelves/frutas-e-legumes/legumes/agriao-e-alho-frances/11526,,,27.0,4.0
+3,False,11527,11527,Cenouras e Abóbora,cenouras-e-abobora,/shelves/frutas-e-legumes/legumes/cenouras-e-abobora/11527,,,28.0,6.0
+3,False,11528,11528,Tomates e Pimentos,tomates-e-pimentos,/shelves/frutas-e-legumes/legumes/tomates-e-pimentos/11528,,,29.0,11.0
+3,False,11530,11530,Pepinos e Curgetes,pepinos-e-curgetes,/shelves/frutas-e-legumes/legumes/pepinos-e-curgetes/11530,,,30.0,2.0
+3,False,11529,11529,Cogumelos,cogumelos,/shelves/frutas-e-legumes/legumes/cogumelos/11529,,,31.0,5.0
+3,False,11534,11534,Ervas Aromáticas,ervas-aromaticas,/shelves/frutas-e-legumes/legumes/ervas-aromaticas/11534,,,32.0,10.0
+3,False,11533,11533,Outros Legumes,outros-legumes,/shelves/frutas-e-legumes/legumes/outros-legumes/11533,,,33.0,18.0
+3,False,11715,11715,Arroz,arroz,/shelves/mercearia/arroz-massa-e-farinha/arroz/11715,,,34.0,37.0
+3,False,11716,11716,Massa,massa,/shelves/mercearia/arroz-massa-e-farinha/massa/11716,,,35.0,40.0
+3,False,11717,11717,Farinha,farinha,/shelves/mercearia/arroz-massa-e-farinha/farinha/11717,,,36.0,40.0
+3,False,11718,11718,Azeite,azeite,/shelves/mercearia/azeite-oleo-e-vinagre/azeite/11718,,,37.0,30.0
+3,False,11719,11719,Óleo Alimentar,oleo-alimentar,/shelves/mercearia/azeite-oleo-e-vinagre/oleo-alimentar/11719,,,38.0,9.0
+3,False,11720,11720,Vinagre,vinagre,/shelves/mercearia/azeite-oleo-e-vinagre/vinagre/11720,,,39.0,27.0
+3,False,11721,11721,Molhos,molhos,/shelves/mercearia/molhos-temperos-e-sal/molhos/11721,,,40.0,40.0
+3,False,11757,11757,Temperos,temperos,/shelves/mercearia/molhos-temperos-e-sal/temperos/11757,,,41.0,40.0
+3,False,11722,11722,"Maionese, Ketchup e Mostarda",maionese-ketchup-e-mostarda,/shelves/mercearia/molhos-temperos-e-sal/maionese-ketchup-e-mostarda/11722,,,42.0,40.0
+3,False,11723,11723,Especiarias e Ervas Aromáticas,especiarias-e-ervas-aromaticas,/shelves/mercearia/molhos-temperos-e-sal/especiarias-e-ervas-aromaticas/11723,,,43.0,40.0
+3,False,11724,11724,Caldos,caldos,/shelves/mercearia/molhos-temperos-e-sal/caldos/11724,,,44.0,27.0
+3,False,11725,11725,Sal,sal,/shelves/mercearia/molhos-temperos-e-sal/sal/11725,,,45.0,18.0
+3,False,10242,10242,Feijão,feijao,/shelves/mercearia/vegetais-secos-e-sementes/feijao/10242,,,46.0,4.0
+3,False,10243,10243,Grão,grao,/shelves/mercearia/vegetais-secos-e-sementes/grao/10243,,,47.0,1.0
+3,False,11021,11021,Lentilhas,lentilhas,/shelves/mercearia/vegetais-secos-e-sementes/lentilhas/11021,,,48.0,1.0
+3,False,11817,11817,Sementes,sementes,/shelves/mercearia/vegetais-secos-e-sementes/sementes/11817,,,49.0,9.0
+3,False,10273,10273,Café em Cápsulas,cafe-em-capsulas,/shelves/mercearia/cafe-cha-e-achocolatados/cafe-em-capsulas/10273,,,50.0,40.0
+3,False,11058,11058,Café Torrado,cafe-torrado,/shelves/mercearia/cafe-cha-e-achocolatados/cafe-torrado/11058,,,51.0,34.0
+3,False,10271,10271,Café Solúvel,cafe-soluvel,/shelves/mercearia/cafe-cha-e-achocolatados/cafe-soluvel/10271,,,52.0,27.0
+3,False,11057,11057,Bebidas de Cereais,bebidas-de-cereais,/shelves/mercearia/cafe-cha-e-achocolatados/bebidas-de-cereais/11057,,,53.0,19.0
+3,False,11736,11736,Chás e Infusões,chas-e-infusoes,/shelves/mercearia/cafe-cha-e-achocolatados/chas-e-infusoes/11736,,,54.0,40.0
+3,False,11745,11745,Chocolate em Pó,chocolate-em-po,/shelves/mercearia/cafe-cha-e-achocolatados/chocolate-em-po/11745,,,55.0,17.0
+3,False,10292,10292,Açúcar e Adoçantes,acucar-e-adocantes,/shelves/mercearia/acucar-e-sobremesas/acucar-e-adocantes/10292,,,56.0,40.0
+3,False,11737,11737,Chocolate e Cacau de Culinária,chocolate-e-cacau-de-culinaria,/shelves/mercearia/acucar-e-sobremesas/chocolate-e-cacau-de-culinaria/11737,,,57.0,15.0
+3,False,11738,11738,Farinha e Fermento,farinha-e-fermento,/shelves/mercearia/acucar-e-sobremesas/farinha-e-fermento/11738,,,58.0,13.0
+3,False,11739,11739,"Aromas, Toppings e Corantes",aromas-toppings-e-corantes,/shelves/mercearia/acucar-e-sobremesas/aromas-toppings-e-corantes/11739,,,59.0,9.0
+3,False,11740,11740,Gelatinas,gelatinas,/shelves/mercearia/acucar-e-sobremesas/gelatinas/11740,,,60.0,35.0
+3,False,11741,11741,Bolos e Sobremesas,bolos-e-sobremesas,/shelves/mercearia/acucar-e-sobremesas/bolos-e-sobremesas/11741,,,61.0,40.0
+3,False,11742,11742,Coberturas e Decoração,coberturas-e-decoracao,/shelves/mercearia/acucar-e-sobremesas/coberturas-e-decoracao/11742,,,62.0,31.0
+3,False,11743,11743,Leite Condensado,leite-condensado,/shelves/mercearia/acucar-e-sobremesas/leite-condensado/11743,,,63.0,16.0
+3,False,11744,11744,Fruta em Calda,fruta-em-calda,/shelves/mercearia/acucar-e-sobremesas/fruta-em-calda/11744,,,64.0,13.0
+3,False,10260,10260,Cereais Infantis e Juvenis,cereais-infantis-e-juvenis,/shelves/mercearia/cereais-e-barras/cereais-infantis-e-juvenis/10260,,,65.0,40.0
+3,False,11050,11050,Cereais Linha e Fibra,cereais-linha-e-fibra,/shelves/mercearia/cereais-e-barras/cereais-linha-e-fibra/11050,,,66.0,40.0
+3,False,11052,11052,Muesli e Granola,muesli-e-granola,/shelves/mercearia/cereais-e-barras/muesli-e-granola/11052,,,67.0,14.0
+3,False,11053,11053,Flocos e Papas,flocos-e-papas,/shelves/mercearia/cereais-e-barras/flocos-e-papas/11053,,,68.0,21.0
+3,False,11054,11054,Barras de Cereais,barras-de-cereais,/shelves/mercearia/cereais-e-barras/barras-de-cereais/11054,,,69.0,40.0
+3,False,11072,11072,Doces e Compotas,doces-e-compotas,/shelves/mercearia/cremes-de-barrar-doces-e-mel/doces-e-compotas/11072,,,70.0,40.0
+3,False,10318,10318,Marmelada e Goiabada,marmelada-e-goiabada,/shelves/mercearia/cremes-de-barrar-doces-e-mel/marmelada-e-goiabada/10318,,,71.0,10.0
+3,False,10317,10317,Cremes de Barrar,cremes-de-barrar,/shelves/mercearia/cremes-de-barrar-doces-e-mel/cremes-de-barrar/10317,,,72.0,19.0
+3,False,10319,10319,Mel,mel,/shelves/mercearia/cremes-de-barrar-doces-e-mel/mel/10319,,,73.0,11.0
+3,False,11082,11082,Bolachas de Chocolate,bolachas-de-chocolate,/shelves/mercearia/bolachas-biscoitos-e-bolos/bolachas-de-chocolate/11082,,,74.0,40.0
+3,False,10796,10796,Bolachas com Cobertura e Recheio,bolachas-com-cobertura-e-recheio,/shelves/mercearia/bolachas-biscoitos-e-bolos/bolachas-com-cobertura-e-recheio/10796,,,75.0,40.0
+3,False,10251,10251,Bolachas Infantis,bolachas-infantis,/shelves/mercearia/bolachas-biscoitos-e-bolos/bolachas-infantis/10251,,,76.0,25.0
+3,False,11747,11747,"Bolachas de Manteiga, Shortcake e Palmiers",bolachas-de-manteiga-shortcake-e-palmiers,/shelves/mercearia/bolachas-biscoitos-e-bolos/bolachas-de-manteiga-shortcake-e-palmiers/11747,,,77.0,40.0
+3,False,10253,10253,Bolachas Maria e Torrada,bolachas-maria-e-torrada,/shelves/mercearia/bolachas-biscoitos-e-bolos/bolachas-maria-e-torrada/10253,,,78.0,21.0
+3,False,10250,10250,Bolachas Cracker e Água e Sal,bolachas-cracker-e-agua-e-sal,/shelves/mercearia/bolachas-biscoitos-e-bolos/bolachas-cracker-e-agua-e-sal/10250,,,79.0,39.0
+3,False,10252,10252,Bolachas Fibra e sem Açúcar,bolachas-fibra-e-sem-acucar,/shelves/mercearia/bolachas-biscoitos-e-bolos/bolachas-fibra-e-sem-acucar/10252,,,80.0,40.0
+3,False,10259,10259,"Bolos, Napolitanas e Pães de Leite",bolos-napolitanas-e-paes-de-leite,/shelves/mercearia/bolachas-biscoitos-e-bolos/bolos-napolitanas-e-paes-de-leite/10259,,,81.0,40.0
+3,False,11750,11750,Bolachas Sortidas,bolachas-sortidas,/shelves/mercearia/bolachas-biscoitos-e-bolos/bolachas-sortidas/11750,,,82.0,9.0
+3,False,11816,11816,Tortitas Arroz e Milho,tortitas-arroz-e-milho,/shelves/mercearia/bolachas-biscoitos-e-bolos/tortitas-arroz-e-milho/11816,,,83.0,21.0
+3,False,10306,10306,Chocolates de Leite,chocolates-de-leite,/shelves/mercearia/chocolate-gomas-e-rebucados/chocolates-de-leite/10306,,,84.0,40.0
+3,False,10746,10746,Chocolates Negros,chocolates-negros,/shelves/mercearia/chocolate-gomas-e-rebucados/chocolates-negros/10746,,,85.0,19.0
+3,False,10747,10747,Chocolates Brancos,chocolates-brancos,/shelves/mercearia/chocolate-gomas-e-rebucados/chocolates-brancos/10747,,,86.0,11.0
+3,False,10751,10751,Chocolate com Avelã e Amêndoa,chocolate-com-avela-e-amendoa,/shelves/mercearia/chocolate-gomas-e-rebucados/chocolate-com-avela-e-amendoa/10751,,,87.0,29.0
+3,False,10304,10304,Bombons,bombons,/shelves/mercearia/chocolate-gomas-e-rebucados/bombons/10304,,,88.0,7.0
+3,False,10308,10308,Chocolates Mini e Drageias,chocolates-mini-e-drageias,/shelves/mercearia/chocolate-gomas-e-rebucados/chocolates-mini-e-drageias/10308,,,89.0,25.0
+3,False,10307,10307,Chocolate com Recheios de Fruta,chocolate-com-recheios-de-fruta,/shelves/mercearia/chocolate-gomas-e-rebucados/chocolate-com-recheios-de-fruta/10307,,,90.0,10.0
+3,False,10305,10305,Chocolate Infantil,chocolate-infantil,/shelves/mercearia/chocolate-gomas-e-rebucados/chocolate-infantil/10305,,,91.0,22.0
+3,False,11748,11748,Gomas e Rebuçados,gomas-e-rebucados,/shelves/mercearia/chocolate-gomas-e-rebucados/gomas-e-rebucados/11748,,,92.0,40.0
+3,False,11749,11749,Pastilhas Elásticas,pastilhas-elasticas,/shelves/mercearia/chocolate-gomas-e-rebucados/pastilhas-elasticas/11749,,,93.0,38.0
+3,False,11727,11727,Azeitonas e Tremoços,azeitonas-e-tremocos,/shelves/mercearia/conservas/azeitonas-e-tremocos/11727,,,94.0,22.0
+3,False,11728,11728,"Cogumelos, Milho e Ervilhas",cogumelos-milho-e-ervilhas,/shelves/mercearia/conservas/cogumelos-milho-e-ervilhas/11728,,,95.0,23.0
+3,False,11729,11729,Feijão e Grão,feijao-e-grao,/shelves/mercearia/conservas/feijao-e-grao/11729,,,96.0,35.0
+3,False,11730,11730,Peixe,peixe,/shelves/mercearia/conservas/peixe/11730,,,97.0,40.0
+3,False,11731,11731,Salsichas,salsichas,/shelves/mercearia/conservas/salsichas/11731,,,98.0,38.0
+3,False,11732,11732,Patê,pate,/shelves/mercearia/conservas/pate/11732,,,99.0,19.0
+3,False,11733,11733,Pickles e Outros Vegetais,pickles-e-outros-vegetais,/shelves/mercearia/conservas/pickles-e-outros-vegetais/11733,,,100.0,26.0
+3,False,10245,10245,Refeições prontas,refeicoes-prontas,/shelves/mercearia/sopas-e-refeicoes/refeicoes-prontas/10245,,,101.0,23.0
+3,False,10246,10246,Sopas e Cremes,sopas-e-cremes,/shelves/mercearia/sopas-e-refeicoes/sopas-e-cremes/10246,,,102.0,16.0
+3,False,11746,11746,"Noodles, Pastas e Especialidades",noodles-pastas-e-especialidades,/shelves/mercearia/sopas-e-refeicoes/noodles-pastas-e-especialidades/11746,,,103.0,26.0
+3,False,10221,10221,Batatas Lisas e Onduladas,batatas-lisas-e-onduladas,/shelves/mercearia/batatas-fritas-e-snacks/batatas-lisas-e-onduladas/10221,,,104.0,17.0
+3,False,10219,10219,Batatas com Sabores,batatas-com-sabores,/shelves/mercearia/batatas-fritas-e-snacks/batatas-com-sabores/10219,,,105.0,23.0
+3,False,10218,10218,Batatas Palha e Caseiras,batatas-palha-e-caseiras,/shelves/mercearia/batatas-fritas-e-snacks/batatas-palha-e-caseiras/10218,,,106.0,8.0
+3,False,10222,10222,Snacks e Aperitivos,snacks-e-aperitivos,/shelves/mercearia/batatas-fritas-e-snacks/snacks-e-aperitivos/10222,,,107.0,40.0
+3,False,10223,10223,Desidratados e Frutos Secos,desidratados-e-frutos-secos,/shelves/mercearia/batatas-fritas-e-snacks/desidratados-e-frutos-secos/10223,,,108.0,40.0
+3,False,11726,11726,Pipocas,pipocas,/shelves/mercearia/batatas-fritas-e-snacks/pipocas/11726,,,109.0,5.0
+3,False,11672,11672,Água com Gás,agua-com-gas,/shelves/bebidas/agua/agua-com-gas/11672,,,110.0,27.0
+3,False,11673,11673,Água sem Gás,agua-sem-gas,/shelves/bebidas/agua/agua-sem-gas/11673,,,111.0,33.0
+3,False,11674,11674,Água com Sabores,agua-com-sabores,/shelves/bebidas/agua/agua-com-sabores/11674,,,112.0,8.0
+3,False,11675,11675,Água Tónica e Ginger Ale,agua-tonica-e-ginger-ale,/shelves/bebidas/agua/agua-tonica-e-ginger-ale/11675,,,113.0,20.0
+3,False,11112,11112,Cerveja Branca,cerveja-branca,/shelves/bebidas/cervejas-e-sidras/cerveja-branca/11112,,,114.0,40.0
+3,False,11113,11113,Cerveja Preta,cerveja-preta,/shelves/bebidas/cervejas-e-sidras/cerveja-preta/11113,,,115.0,13.0
+3,False,10341,10341,Cerveja sem Álcool,cerveja-sem-alcool,/shelves/bebidas/cervejas-e-sidras/cerveja-sem-alcool/10341,,,116.0,10.0
+3,False,10342,10342,Sidras e Panachés,sidras-e-panaches,/shelves/bebidas/cervejas-e-sidras/sidras-e-panaches/10342,,,117.0,21.0
+3,False,11116,11116,Cervejas Estrangeiras e Artesanais,cervejas-estrangeiras-e-artesanais,/shelves/bebidas/cervejas-e-sidras/cervejas-estrangeiras-e-artesanais/11116,,,118.0,7.0
+3,False,10011,10011,Refrigerantes com Gás,refrigerantes-com-gas,/shelves/bebidas/refrigerantes-e-sumos/refrigerantes-com-gas/10011,,,119.0,40.0
+3,False,10325,10325,Refrigerantes sem Gás,refrigerantes-sem-gas,/shelves/bebidas/refrigerantes-e-sumos/refrigerantes-sem-gas/10325,,,120.0,40.0
+3,False,11109,11109,Ice Tea e Tisanas,ice-tea-e-tisanas,/shelves/bebidas/refrigerantes-e-sumos/ice-tea-e-tisanas/11109,,,121.0,33.0
+3,False,11754,11754,Néctares de Fruta,nectares-de-fruta,/shelves/bebidas/refrigerantes-e-sumos/nectares-de-fruta/11754,,,122.0,40.0
+3,False,11755,11755,Sumos 100%,sumos-100%25,/shelves/bebidas/refrigerantes-e-sumos/sumos-100%25/11755,,,123.0,38.0
+3,False,11756,11756,Concentrados e em Pó,concentrados-e-em-po,/shelves/bebidas/refrigerantes-e-sumos/concentrados-e-em-po/11756,,,124.0,26.0
+3,False,11111,11111,Bebidas Energéticas e Isotónicas,bebidas-energeticas-e-isotonicas,/shelves/bebidas/refrigerantes-e-sumos/bebidas-energeticas-e-isotonicas/11111,,,125.0,37.0
+3,False,11798,11798,Água Tónica e Ginger Ale,agua-tonica-e-ginger-ale,/shelves/bebidas/refrigerantes-e-sumos/agua-tonica-e-ginger-ale/11798,,,126.0,20.0
+3,False,11691,11691,Leite Meio Gordo,leite-meio-gordo,/shelves/laticinios-e-ovos/leite/leite-meio-gordo/11691,,,127.0,19.0
+3,False,11692,11692,Leite Gordo,leite-gordo,/shelves/laticinios-e-ovos/leite/leite-gordo/11692,,,128.0,5.0
+3,False,11693,11693,Leite Magro,leite-magro,/shelves/laticinios-e-ovos/leite/leite-magro/11693,,,129.0,18.0
+3,False,11694,11694,Leite Proteico,leite-proteico,/shelves/laticinios-e-ovos/leite/leite-proteico/11694,,,130.0,4.0
+3,False,11695,11695,Achocolatados e Aromatizados,achocolatados-e-aromatizados,/shelves/laticinios-e-ovos/leite/achocolatados-e-aromatizados/11695,,,131.0,36.0
+3,False,11696,11696,Leites Infantis e Bebidas Lácteas,leites-infantis-e-bebidas-lacteas,/shelves/laticinios-e-ovos/leite/leites-infantis-e-bebidas-lacteas/11696,,,132.0,11.0
+3,False,11697,11697,Sem Lactose,sem-lactose,/shelves/laticinios-e-ovos/leite/sem-lactose/11697,,,133.0,2.0
+3,False,11753,11753,Bebidas Vegetais,bebidas-vegetais,/shelves/laticinios-e-ovos/leite/bebidas-vegetais/11753,,,134.0,40.0
+3,False,11698,11698,Ovos,ovos,/shelves/laticinios-e-ovos/ovos/ovos/11698,,,135.0,7.0
+3,False,11706,11706,Manteigas,manteigas,/shelves/laticinios-e-ovos/manteiga-e-cremes/manteigas/11706,,,136.0,29.0
+3,False,11707,11707,Cremes Vegetais e para Barrar,cremes-vegetais-e-para-barrar,/shelves/laticinios-e-ovos/manteiga-e-cremes/cremes-vegetais-e-para-barrar/11707,,,137.0,27.0
+3,False,11703,11703,Natas Culinária e Bechamel,natas-culinaria-e-bechamel,/shelves/laticinios-e-ovos/culinaria/natas-culinaria-e-bechamel/11703,,,138.0,19.0
+3,False,11704,11704,Margarinas,margarinas,/shelves/laticinios-e-ovos/culinaria/margarinas/11704,,,139.0,5.0
+3,False,11705,11705,Natas para Bater e Chantilly,natas-para-bater-e-chantilly,/shelves/laticinios-e-ovos/culinaria/natas-para-bater-e-chantilly/11705,,,140.0,18.0
+3,False,11551,11551,Queijo Fatiado e Bolas,queijo-fatiado-e-bolas,/shelves/charcutaria-e-queijos/queijo/queijo-fatiado-e-bolas/11551,,,141.0,40.0
+3,False,11552,11552,Queijo Ralado e Para Barrar,queijo-ralado-e-para-barrar,/shelves/charcutaria-e-queijos/queijo/queijo-ralado-e-para-barrar/11552,,,142.0,24.0
+3,False,11553,11553,Queijo Curado e Amanteigado,queijo-curado-e-amanteigado,/shelves/charcutaria-e-queijos/queijo/queijo-curado-e-amanteigado/11553,,,143.0,40.0
+3,False,11554,11554,Snacks,snacks,/shelves/charcutaria-e-queijos/queijo/snacks/11554,,,144.0,17.0
+3,False,11555,11555,Queijo Fresco e Mozzarella,queijo-fresco-e-mozzarella,/shelves/charcutaria-e-queijos/queijo/queijo-fresco-e-mozzarella/11555,,,145.0,17.0
+3,False,11560,11560,Enchidos,enchidos,/shelves/charcutaria-e-queijos/charcutaria/enchidos/11560,,,146.0,40.0
+3,False,11558,11558,Fiambre Aves,fiambre-aves,/shelves/charcutaria-e-queijos/charcutaria/fiambre-aves/11558,,,147.0,13.0
+3,False,11559,11559,Fiambre Porco,fiambre-porco,/shelves/charcutaria-e-queijos/charcutaria/fiambre-porco/11559,,,148.0,16.0
+3,False,11556,11556,Presunto e Bacon,presunto-e-bacon,/shelves/charcutaria-e-queijos/charcutaria/presunto-e-bacon/11556,,,149.0,24.0
+3,False,11557,11557,"Mortadela, Paio e Chourição",mortadela-paio-e-chouricao,/shelves/charcutaria-e-queijos/charcutaria/mortadela-paio-e-chouricao/11557,,,150.0,18.0
+3,False,11561,11561,Salsichas,salsichas,/shelves/charcutaria-e-queijos/charcutaria/salsichas/11561,,,151.0,7.0
+3,False,11562,11562,Especialidades,especialidades,/shelves/charcutaria-e-queijos/charcutaria/especialidades/11562,,,152.0,12.0
+3,False,11566,11566,Pão de Forno,pao-de-forno,/shelves/padaria-e-pastelaria/padaria/pao-de-forno/11566,,,153.0,21.0
+3,False,11567,11567,Pão de Forma e embalados,pao-de-forma-e-embalados,/shelves/padaria-e-pastelaria/padaria/pao-de-forma-e-embalados/11567,,,154.0,40.0
+3,False,11568,11568,"Tostas, Croutons e Gressinos",tostas-croutons-e-gressinos,/shelves/padaria-e-pastelaria/padaria/tostas-croutons-e-gressinos/11568,,,155.0,35.0
+3,False,11569,11569,Pão Ralado,pao-ralado,/shelves/padaria-e-pastelaria/padaria/pao-ralado/11569,,,156.0,4.0
+3,False,11570,11570,Pastelaria Doce,pastelaria-doce,/shelves/padaria-e-pastelaria/pastelaria/pastelaria-doce/11570,,,157.0,32.0
+3,False,11571,11571,Pastelaria Salgada,pastelaria-salgada,/shelves/padaria-e-pastelaria/pastelaria/pastelaria-salgada/11571,,,158.0,6.0
+3,False,10400,10400,Iogurtes Líquidos,iogurtes-liquidos,/shelves/iogurtes-e-sobremesas/iogurtes/iogurtes-liquidos/10400,,,159.0,40.0
+3,False,10395,10395,Iogurtes Aromas e Naturais,iogurtes-aromas-e-naturais,/shelves/iogurtes-e-sobremesas/iogurtes/iogurtes-aromas-e-naturais/10395,,,160.0,25.0
+3,False,10396,10396,Iogurtes Pedaços,iogurtes-pedacos,/shelves/iogurtes-e-sobremesas/iogurtes/iogurtes-pedacos/10396,,,161.0,12.0
+3,False,10397,10397,Iogurtes Magros,iogurtes-magros,/shelves/iogurtes-e-sobremesas/iogurtes/iogurtes-magros/10397,,,162.0,22.0
+3,False,10398,10398,Iogurtes Bifidus,iogurtes-bifidus,/shelves/iogurtes-e-sobremesas/iogurtes/iogurtes-bifidus/10398,,,163.0,9.0
+3,False,11178,11178,Iogurtes Infantis,iogurtes-infantis,/shelves/iogurtes-e-sobremesas/iogurtes/iogurtes-infantis/11178,,,164.0,22.0
+3,False,11176,11176,Iogurtes Gregos e Kefir,iogurtes-gregos-e-kefir,/shelves/iogurtes-e-sobremesas/iogurtes/iogurtes-gregos-e-kefir/11176,,,165.0,30.0
+3,False,11177,11177,Iogurtes Proteicos,iogurtes-proteicos,/shelves/iogurtes-e-sobremesas/iogurtes/iogurtes-proteicos/11177,,,166.0,36.0
+3,False,11713,11713,Iogurtes Defesas e Coração,iogurtes-defesas-e-coracao,/shelves/iogurtes-e-sobremesas/iogurtes/iogurtes-defesas-e-coracao/11713,,,167.0,3.0
+3,False,11175,11175,Iogurtes sem Lactose,iogurtes-sem-lactose,/shelves/iogurtes-e-sobremesas/iogurtes/iogurtes-sem-lactose/11175,,,168.0,7.0
+3,False,11818,11818,Vegegurtes e Yofu,vegegurtes-e-yofu,/shelves/iogurtes-e-sobremesas/iogurtes/vegegurtes-e-yofu/11818,,,169.0,25.0
+3,False,10719,10719,Mousses e Pudins,mousses-e-pudins,/shelves/iogurtes-e-sobremesas/sobremesas/mousses-e-pudins/10719,,,170.0,31.0
+3,False,10800,10800,Gelatinas,gelatinas,/shelves/iogurtes-e-sobremesas/sobremesas/gelatinas/10800,,,171.0,23.0
+3,False,11799,11799,Fruta,fruta,/shelves/iogurtes-e-sobremesas/sobremesas/fruta/11799,,,172.0,1.0
+3,False,11589,11589,"Douradinhos, Filetes e Crocantes",douradinhos-filetes-e-crocantes,/shelves/congelados/refeicoes/douradinhos-filetes-e-crocantes/11589,,,173.0,40.0
+3,False,11587,11587,Hamburguers e Almôndegas,hamburguers-e-almondegas,/shelves/congelados/refeicoes/hamburguers-e-almondegas/11587,,,174.0,25.0
+3,False,11588,11588,Entradas e Salgados,entradas-e-salgados,/shelves/congelados/refeicoes/entradas-e-salgados/11588,,,175.0,32.0
+3,False,11584,11584,Pizzas,pizzas,/shelves/congelados/refeicoes/pizzas/11584,,,176.0,20.0
+3,False,11585,11585,Lasanhas e Massas Italianas,lasanhas-e-massas-italianas,/shelves/congelados/refeicoes/lasanhas-e-massas-italianas/11585,,,177.0,6.0
+3,False,11586,11586,Refeições,refeicoes,/shelves/congelados/refeicoes/refeicoes/11586,,,178.0,17.0
+3,False,11576,11576,Peixe,peixe,/shelves/congelados/peixe-e-marisco/peixe/11576,,,179.0,40.0
+3,False,11578,11578,Bacalhau,bacalhau,/shelves/congelados/peixe-e-marisco/bacalhau/11578,,,180.0,14.0
+3,False,11577,11577,Marisco,marisco,/shelves/congelados/peixe-e-marisco/marisco/11577,,,181.0,24.0
+3,False,11579,11579,Fruta,fruta,/shelves/congelados/fruta-e-legumes/fruta/11579,,,182.0,6.0
+3,False,11580,11580,Legumes,legumes,/shelves/congelados/fruta-e-legumes/legumes/11580,,,183.0,40.0
+3,False,11581,11581,Batatas Pré-Fritas,batatas-pre-fritas,/shelves/congelados/fruta-e-legumes/batatas-pre-fritas/11581,,,184.0,14.0
+3,False,11582,11582,Gelados,gelados,/shelves/congelados/gelados-e-sobremesas/gelados/11582,,,185.0,40.0
+3,False,11583,11583,Sobremesas,sobremesas,/shelves/congelados/gelados-e-sobremesas/sobremesas/11583,,,186.0,20.0
+3,False,11482,11482,Gelo Picado e Cubos,gelo-picado-e-cubos,/shelves/congelados/gelo/gelo-picado-e-cubos/11482,,,187.0,2.0
+3,False,10167,10167,Pratos Quentes,pratos-quentes,/shelves/refeicoes/take-away/pratos-quentes/10167,,,188.0,6.0
+3,False,11644,11644,Pizzas e Lasanhas,pizzas-e-lasanhas,/shelves/refeicoes/refrigeradas/pizzas-e-lasanhas/11644,,,189.0,15.0
+3,False,11645,11645,Outras Refeições,outras-refeicoes,/shelves/refeicoes/refrigeradas/outras-refeicoes/11645,,,190.0,12.0
+3,False,11646,11646,Sopas e Cremes,sopas-e-cremes,/shelves/refeicoes/refrigeradas/sopas-e-cremes/11646,,,191.0,11.0
+3,False,11647,11647,"Saladas, Sandes e Wraps",saladas-sandes-e-wraps,/shelves/refeicoes/refrigeradas/saladas-sandes-e-wraps/11647,,,192.0,16.0
+3,False,11648,11648,Massas,massas,/shelves/refeicoes/refrigeradas/massas/11648,,,193.0,19.0
+3,False,11476,11476,Tintos do Douro,tintos-do-douro,/shelves/garrafeira/vinhos-tintos/tintos-do-douro/11476,,,194.0,40.0
+3,False,11477,11477,Tintos do Dão,tintos-do-dao,/shelves/garrafeira/vinhos-tintos/tintos-do-dao/11477,,,195.0,19.0
+3,False,11714,11714,Tintos das Beiras,tintos-das-beiras,/shelves/garrafeira/vinhos-tintos/tintos-das-beiras/11714,,,196.0,1.0
+3,False,11620,11620,Tintos da Bairrada,tintos-da-bairrada,/shelves/garrafeira/vinhos-tintos/tintos-da-bairrada/11620,,,197.0,2.0
+3,False,11621,11621,Tintos de Lisboa e Tejo,tintos-de-lisboa-e-tejo,/shelves/garrafeira/vinhos-tintos/tintos-de-lisboa-e-tejo/11621,,,198.0,26.0
+3,False,11622,11622,Tintos de Setúbal,tintos-de-setubal,/shelves/garrafeira/vinhos-tintos/tintos-de-setubal/11622,,,199.0,32.0
+3,False,11623,11623,Tintos do Alentejo,tintos-do-alentejo,/shelves/garrafeira/vinhos-tintos/tintos-do-alentejo/11623,,,,
+3,False,11625,11625,Tintos Biológicos,tintos-biologicos,/shelves/garrafeira/vinhos-tintos/tintos-biologicos/11625,,,,
+3,False,11626,11626,Tintos Estrangeiros,tintos-estrangeiros,/shelves/garrafeira/vinhos-tintos/tintos-estrangeiros/11626,,,,
+3,False,11478,11478,Brancos do Douro,brancos-do-douro,/shelves/garrafeira/vinhos-brancos/brancos-do-douro/11478,,,,
+3,False,11479,11479,Brancos do Dão,brancos-do-dao,/shelves/garrafeira/vinhos-brancos/brancos-do-dao/11479,,,,
+3,False,11480,11480,Brancos das Beiras,brancos-das-beiras,/shelves/garrafeira/vinhos-brancos/brancos-das-beiras/11480,,,,
+3,False,11627,11627,Brancos da Bairrada,brancos-da-bairrada,/shelves/garrafeira/vinhos-brancos/brancos-da-bairrada/11627,,,,
+3,False,11628,11628,Brancos de Lisboa e Tejo,brancos-de-lisboa-e-tejo,/shelves/garrafeira/vinhos-brancos/brancos-de-lisboa-e-tejo/11628,,,,
+3,False,11629,11629,Brancos de Setúbal,brancos-de-setubal,/shelves/garrafeira/vinhos-brancos/brancos-de-setubal/11629,,,,
+3,False,11630,11630,Brancos do Alentejo,brancos-do-alentejo,/shelves/garrafeira/vinhos-brancos/brancos-do-alentejo/11630,,,,
+3,False,11633,11633,Brancos Estrangeiros,brancos-estrangeiros,/shelves/garrafeira/vinhos-brancos/brancos-estrangeiros/11633,,,,
+3,False,11634,11634,Rosé Douro e Dão,rose-douro-e-dao,/shelves/garrafeira/vinhos-rose/rose-douro-e-dao/11634,,,,
+3,False,11635,11635,"Rosé Tejo, Lisboa e Setúbal",rose-tejo-lisboa-e-setubal,/shelves/garrafeira/vinhos-rose/rose-tejo-lisboa-e-setubal/11635,,,,
+3,False,11636,11636,Rosé Alentejo e Algarve,rose-alentejo-e-algarve,/shelves/garrafeira/vinhos-rose/rose-alentejo-e-algarve/11636,,,,
+3,False,11651,11651,Verde Tinto,verde-tinto,/shelves/garrafeira/vinhos-verdes/verde-tinto/11651,,,,
+3,False,11652,11652,Verde Branco,verde-branco,/shelves/garrafeira/vinhos-verdes/verde-branco/11652,,,,
+3,False,11653,11653,Verde Rosé,verde-rose,/shelves/garrafeira/vinhos-verdes/verde-rose/11653,,,,
+3,False,11655,11655,Corrente Tinto,corrente-tinto,/shelves/garrafeira/vinhos-correntes-e-sangrias/corrente-tinto/11655,,,,
+3,False,11656,11656,Corrente Branco,corrente-branco,/shelves/garrafeira/vinhos-correntes-e-sangrias/corrente-branco/11656,,,,
+3,False,11657,11657,Corrente Rosé,corrente-rose,/shelves/garrafeira/vinhos-correntes-e-sangrias/corrente-rose/11657,,,,
+3,False,11658,11658,Frisante,frisante,/shelves/garrafeira/vinhos-correntes-e-sangrias/frisante/11658,,,,
+3,False,11659,11659,Sangria,sangria,/shelves/garrafeira/vinhos-correntes-e-sangrias/sangria/11659,,,,
+3,False,11660,11660,Moscatel,moscatel,/shelves/garrafeira/licorosos-e-aperitivos/moscatel/11660,,,,
+3,False,11661,11661,Vinho do Porto,vinho-do-porto,/shelves/garrafeira/licorosos-e-aperitivos/vinho-do-porto/11661,,,,
+3,False,11663,11663,Licores,licores,/shelves/garrafeira/licorosos-e-aperitivos/licores/11663,,,,
+3,False,11664,11664,Aperitivos,aperitivos,/shelves/garrafeira/licorosos-e-aperitivos/aperitivos/11664,,,,
+3,False,11665,11665,Vodka,vodka,/shelves/garrafeira/bebidas-espirituosas/vodka/11665,,,,
+3,False,11666,11666,Whisky,whisky,/shelves/garrafeira/bebidas-espirituosas/whisky/11666,,,,
+3,False,11667,11667,"Cocktails, Cachaça, Tequila e Rum",cocktails-cachaca-tequila-e-rum,/shelves/garrafeira/bebidas-espirituosas/cocktails-cachaca-tequila-e-rum/11667,,,,
+3,False,11668,11668,Gin,gin,/shelves/garrafeira/bebidas-espirituosas/gin/11668,,,,
+3,False,11669,11669,Aguardente e Brandy,aguardente-e-brandy,/shelves/garrafeira/bebidas-espirituosas/aguardente-e-brandy/11669,,,,
+3,False,11670,11670,Champanhes,champanhes,/shelves/garrafeira/champanhe-e-espumantes/champanhes/11670,,,,
+3,False,11671,11671,Espumantes,espumantes,/shelves/garrafeira/champanhe-e-espumantes/espumantes/11671,,,,
+3,False,11404,11404,Detergente Máquina Loiça,detergente-maquina-loica,/shelves/limpeza/limpeza-da-cozinha/detergente-maquina-loica/11404,,,,
+3,False,11405,11405,Detergente Líquido Loiça,detergente-liquido-loica,/shelves/limpeza/limpeza-da-cozinha/detergente-liquido-loica/11405,,,,
+3,False,11407,11407,Limpeza Fogão e Forno,limpeza-fogao-e-forno,/shelves/limpeza/limpeza-da-cozinha/limpeza-fogao-e-forno/11407,,,,
+3,False,11408,11408,Multisuperfícies,multisuperficies,/shelves/limpeza/limpeza-da-cozinha/multisuperficies/11408,,,,
+3,False,10602,10602,Abrasivos ,abrasivos,/shelves/limpeza/limpeza-casa-de-banho/abrasivos/10602,,,,
+3,False,10603,10603,Blocos e Líquidos Sanitários,blocos-e-liquidos-sanitarios,/shelves/limpeza/limpeza-casa-de-banho/blocos-e-liquidos-sanitarios/10603,,,,
+3,False,10604,10604,Anticalcários e Desinfetantes,anticalcarios-e-desinfetantes,/shelves/limpeza/limpeza-casa-de-banho/anticalcarios-e-desinfetantes/10604,,,,
+3,False,10739,10739,Detergente Lava-Tudo,detergente-lava-tudo,/shelves/limpeza/limpeza-geral/detergente-lava-tudo/10739,,,,
+3,False,11410,11410,Detergente Limpa-Vidros,detergente-limpa-vidros,/shelves/limpeza/limpeza-geral/detergente-limpa-vidros/11410,,,,
+3,False,11411,11411,Lixívia,lixivia,/shelves/limpeza/limpeza-geral/lixivia/11411,,,,
+3,False,11412,11412,Multisuperfícies,multisuperficies,/shelves/limpeza/limpeza-geral/multisuperficies/11412,,,,
+3,False,11413,11413,Desentupidores,desentupidores,/shelves/limpeza/limpeza-geral/desentupidores/11413,,,,
+3,False,11414,11414,Limpeza e Cuidados de Madeiras,limpeza-e-cuidados-de-madeiras,/shelves/limpeza/limpeza-geral/limpeza-e-cuidados-de-madeiras/11414,,,,
+3,False,11415,11415,Específicos de Limpeza,especificos-de-limpeza,/shelves/limpeza/limpeza-geral/especificos-de-limpeza/11415,,,,
+3,False,11793,11793,"Panos, Esfregões e Luvas",panos-esfregoes-e-luvas,/shelves/limpeza/limpeza-geral/panos-esfregoes-e-luvas/11793,,,,
+3,False,11794,11794,Esfregonas e Mopas,esfregonas-e-mopas,/shelves/limpeza/limpeza-geral/esfregonas-e-mopas/11794,,,,
+3,False,11795,11795,"Vassouras, escovas e Pás",vassouras-escovas-e-pas,/shelves/limpeza/limpeza-geral/vassouras-escovas-e-pas/11795,,,,
+3,False,11796,11796,Baldes e Alguidares,baldes-e-alguidares,/shelves/limpeza/limpeza-geral/baldes-e-alguidares/11796,,,,
+3,False,11797,11797,Sacos do Lixo,sacos-do-lixo,/shelves/limpeza/limpeza-geral/sacos-do-lixo/11797,,,,
+3,False,10563,10563,Ambientadores Elétricos e Automáticos,ambientadores-eletricos-e-automaticos,/shelves/limpeza/ambientadores/ambientadores-eletricos-e-automaticos/10563,,,,
+3,False,10564,10564,Ambientadores Automóvel,ambientadores-automovel,/shelves/limpeza/ambientadores/ambientadores-automovel/10564,,,,
+3,False,10566,10566,Velas Ambientadoras,velas-ambientadoras,/shelves/limpeza/ambientadores/velas-ambientadoras/10566,,,,
+3,False,10567,10567,Absorve Odores,absorve-odores,/shelves/limpeza/ambientadores/absorve-odores/10567,,,,
+3,False,11792,11792,Sprays e Sticks Perfumadores,sprays-e-sticks-perfumadores,/shelves/limpeza/ambientadores/sprays-e-sticks-perfumadores/11792,,,,
+3,False,10569,10569,Inseticidas Elétricos e Automáticos,inseticidas-eletricos-e-automaticos,/shelves/limpeza/inseticidas/inseticidas-eletricos-e-automaticos/10569,,,,
+3,False,10570,10570,Inseticidas em Spray e Fitas,inseticidas-em-spray-e-fitas,/shelves/limpeza/inseticidas/inseticidas-em-spray-e-fitas/10570,,,,
+3,False,10571,10571,Anti-Traças,anti-tracas,/shelves/limpeza/inseticidas/anti-tracas/10571,,,,
+3,False,11783,11783,Lavagem e Limpeza Manual,lavagem-e-limpeza-manual,/shelves/limpeza/limpeza-roupa-e-calcado/lavagem-e-limpeza-manual/11783,,,,
+3,False,11784,11784,Detergente em Pó,detergente-em-po,/shelves/limpeza/limpeza-roupa-e-calcado/detergente-em-po/11784,,,,
+3,False,11785,11785,Detergente Líquido,detergente-liquido,/shelves/limpeza/limpeza-roupa-e-calcado/detergente-liquido/11785,,,,
+3,False,11786,11786,Detergente em Cápsulas e Pastilhas,detergente-em-capsulas-e-pastilhas,/shelves/limpeza/limpeza-roupa-e-calcado/detergente-em-capsulas-e-pastilhas/11786,,,,
+3,False,11787,11787,Amaciador,amaciador,/shelves/limpeza/limpeza-roupa-e-calcado/amaciador/11787,,,,
+3,False,11788,11788,Aditivos e Outros Cuidados,aditivos-e-outros-cuidados,/shelves/limpeza/limpeza-roupa-e-calcado/aditivos-e-outros-cuidados/11788,,,,
+3,False,11789,11789,Lixívia,lixivia,/shelves/limpeza/limpeza-roupa-e-calcado/lixivia/11789,,,,
+3,False,11790,11790,Limpeza e Cuidados do Calçado,limpeza-e-cuidados-do-calcado,/shelves/limpeza/limpeza-roupa-e-calcado/limpeza-e-cuidados-do-calcado/11790,,,,
+3,False,11791,11791,Lavandaria,lavandaria,/shelves/limpeza/limpeza-roupa-e-calcado/lavandaria/11791,,,,
+3,False,10600,10600,Guardanapos,guardanapos,/shelves/limpeza/guardanapos-e-rolos-de-cozinha/guardanapos/10600,,,,
+3,False,10601,10601,Rolos de Cozinha,rolos-de-cozinha,/shelves/limpeza/guardanapos-e-rolos-de-cozinha/rolos-de-cozinha/10601,,,,
+3,False,10471,10471,Pasta de Dentes,pasta-de-dentes,/shelves/higiene-e-beleza/higiene-oral/pasta-de-dentes/10471,,,,
+3,False,10473,10473,Escova de Dentes,escova-de-dentes,/shelves/higiene-e-beleza/higiene-oral/escova-de-dentes/10473,,,,
+3,False,10470,10470,Fios Dentários,fios-dentarios,/shelves/higiene-e-beleza/higiene-oral/fios-dentarios/10470,,,,
+3,False,10474,10474,Elixires,elixires,/shelves/higiene-e-beleza/higiene-oral/elixires/10474,,,,
+3,False,10472,10472,Produtos para Próteses Dentárias,produtos-para-proteses-dentarias,/shelves/higiene-e-beleza/higiene-oral/produtos-para-proteses-dentarias/10472,,,,
+3,False,10469,10469,Higiene Oral Infantil,higiene-oral-infantil,/shelves/higiene-e-beleza/higiene-oral/higiene-oral-infantil/10469,,,,
+3,False,11758,11758,Champôs,champos,/shelves/higiene-e-beleza/cabelo/champos/11758,,,,
+3,False,11759,11759,Condicionadores e Máscaras,condicionadores-e-mascaras,/shelves/higiene-e-beleza/cabelo/condicionadores-e-mascaras/11759,,,,
+3,False,11760,11760,Coloração,coloracao,/shelves/higiene-e-beleza/cabelo/coloracao/11760,,,,
+3,False,11761,11761,Modeladores,modeladores,/shelves/higiene-e-beleza/cabelo/modeladores/11761,,,,
+3,False,11762,11762,Acessórios,acessorios,/shelves/higiene-e-beleza/cabelo/acessorios/11762,,,,
+3,False,11764,11764,Unhas,unhas,/shelves/higiene-e-beleza/rosto-e-maquilhagem/unhas/11764,,,,
+3,False,11765,11765,"Máscaras, Cremes e Limpeza Facial",mascaras-cremes-e-limpeza-facial,/shelves/higiene-e-beleza/rosto-e-maquilhagem/mascaras-cremes-e-limpeza-facial/11765,,,,
+3,False,11766,11766,Olhos e Rosto,olhos-e-rosto,/shelves/higiene-e-beleza/rosto-e-maquilhagem/olhos-e-rosto/11766,,,,
+3,False,11767,11767,Batons,batons,/shelves/higiene-e-beleza/rosto-e-maquilhagem/batons/11767,,,,
+3,False,10476,10476,Gel de Banho,gel-de-banho,/shelves/higiene-e-beleza/corpo/gel-de-banho/10476,,,,
+3,False,10477,10477,Sabonetes,sabonetes,/shelves/higiene-e-beleza/corpo/sabonetes/10477,,,,
+3,False,10478,10478,Cuidados para o Corpo,cuidados-para-o-corpo,/shelves/higiene-e-beleza/corpo/cuidados-para-o-corpo/10478,,,,
+3,False,10786,10786,Desodorizantes e Perfumes,desodorizantes-e-perfumes,/shelves/higiene-e-beleza/corpo/desodorizantes-e-perfumes/10786,,,,
+3,False,10475,10475,Depilação,depilacao,/shelves/higiene-e-beleza/corpo/depilacao/10475,,,,
+3,False,11763,11763,Acessórios,acessorios,/shelves/higiene-e-beleza/corpo/acessorios/11763,,,,
+3,False,10538,10538,Pensos Diários,pensos-diarios,/shelves/higiene-e-beleza/higiene-intima/pensos-diarios/10538,,,,
+3,False,10539,10539,Pensos Higiénicos,pensos-higienicos,/shelves/higiene-e-beleza/higiene-intima/pensos-higienicos/10539,,,,
+3,False,10540,10540,Tampões,tampoes,/shelves/higiene-e-beleza/higiene-intima/tampoes/10540,,,,
+3,False,10541,10541,Gel e Loções,gel-e-locoes,/shelves/higiene-e-beleza/higiene-intima/gel-e-locoes/10541,,,,
+3,False,10698,10698,Toalhitas Íntimas,toalhitas-intimas,/shelves/higiene-e-beleza/higiene-intima/toalhitas-intimas/10698,,,,
+3,False,11768,11768,Incontinência,incontinencia,/shelves/higiene-e-beleza/higiene-intima/incontinencia/11768,,,,
+3,False,11316,11316,Barba,barba,/shelves/higiene-e-beleza/homem/barba/11316,,,,
+3,False,11317,11317,Rosto,rosto,/shelves/higiene-e-beleza/homem/rosto/11317,,,,
+3,False,11318,11318,Cabelo,cabelo,/shelves/higiene-e-beleza/homem/cabelo/11318,,,,
+3,False,11383,11383,Gel de Banho,gel-de-banho,/shelves/higiene-e-beleza/homem/gel-de-banho/11383,,,,
+3,False,11325,11325,Desodorizantes e Perfumes,desodorizantes-e-perfumes,/shelves/higiene-e-beleza/homem/desodorizantes-e-perfumes/11325,,,,
+3,False,11322,11322,Depilação,depilacao,/shelves/higiene-e-beleza/homem/depilacao/11322,,,,
+3,False,10529,10529,Bronzeadores,bronzeadores,/shelves/higiene-e-beleza/produtos-solares/bronzeadores/10529,,,,
+3,False,10530,10530,Protetores,protetores,/shelves/higiene-e-beleza/produtos-solares/protetores/10530,,,,
+3,False,10528,10528,After Sun,after-sun,/shelves/higiene-e-beleza/produtos-solares/after-sun/10528,,,,
+3,False,11777,11777,Criança,crianca,/shelves/higiene-e-beleza/produtos-solares/crianca/11777,,,,
+3,False,11400,11400,Primeiros Socorros,primeiros-socorros,/shelves/higiene-e-beleza/bem-estar-e-cuidados/primeiros-socorros/11400,,,,
+3,False,11401,11401,Desinfetantes,desinfetantes,/shelves/higiene-e-beleza/bem-estar-e-cuidados/desinfetantes/11401,,,,
+3,False,11402,11402,Baton e Bálsamos,baton-e-balsamos,/shelves/higiene-e-beleza/bem-estar-e-cuidados/baton-e-balsamos/11402,,,,
+3,False,11778,11778,Cotonetes e Soro Fisiológico,cotonetes-e-soro-fisiologico,/shelves/higiene-e-beleza/bem-estar-e-cuidados/cotonetes-e-soro-fisiologico/11778,,,,
+3,False,11779,11779,Preservativos e Outros,preservativos-e-outros,/shelves/higiene-e-beleza/bem-estar-e-cuidados/preservativos-e-outros/11779,,,,
+3,False,11780,11780,Papel Higiénico,papel-higienico,/shelves/higiene-e-beleza/papel-higienico-e-lencos-papel/papel-higienico/11780,,,,
+3,False,11781,11781,Lenços de Papel,lencos-de-papel,/shelves/higiene-e-beleza/papel-higienico-e-lencos-papel/lencos-de-papel/11781,,,,
+3,False,11782,11782,Toalhitas,toalhitas,/shelves/higiene-e-beleza/papel-higienico-e-lencos-papel/toalhitas/11782,,,,
+3,False,11595,11595,Leites Infantis,leites-infantis,/shelves/bebe/alimentacao/leites-infantis/11595,,,,
+3,False,11596,11596,Papas Infantis,papas-infantis,/shelves/bebe/alimentacao/papas-infantis/11596,,,,
+3,False,11597,11597,Alimentos Lácteos,alimentos-lacteos,/shelves/bebe/alimentacao/alimentos-lacteos/11597,,,,
+3,False,11598,11598,"Boiões, Saquetas e Purés de Fruta",boioes-saquetas-e-pures-de-fruta,/shelves/bebe/alimentacao/boioes-saquetas-e-pures-de-fruta/11598,,,,
+3,False,11599,11599,Snacks e Bolachinhas,snacks-e-bolachinhas,/shelves/bebe/alimentacao/snacks-e-bolachinhas/11599,,,,
+3,False,11601,11601,Fraldas,fraldas,/shelves/bebe/higiene/fraldas/11601,,,,
+3,False,11602,11602,Toalhitas,toalhitas,/shelves/bebe/higiene/toalhitas/11602,,,,
+3,False,11603,11603,Banho,banho,/shelves/bebe/higiene/banho/11603,,,,
+3,False,11604,11604,Higiene Oral,higiene-oral,/shelves/bebe/higiene/higiene-oral/11604,,,,
+3,False,11605,11605,Proteção e Hidratação,protecao-e-hidratacao,/shelves/bebe/higiene/protecao-e-hidratacao/11605,,,,
+3,False,11606,11606,Bacios e Redutores,bacios-e-redutores,/shelves/bebe/puericultura-e-brinquedos/bacios-e-redutores/11606,,,,
+3,False,11607,11607,Banheiras e Outros Acessórios,banheiras-e-outros-acessorios,/shelves/bebe/puericultura-e-brinquedos/banheiras-e-outros-acessorios/11607,,,,
+3,False,11608,11608,Brinquedos Primeira Idade,brinquedos-primeira-idade,/shelves/bebe/puericultura-e-brinquedos/brinquedos-primeira-idade/11608,,,,
+3,False,11609,11609,Chupetas e Acessórios de Alimentação,chupetas-e-acessorios-de-alimentacao,/shelves/bebe/puericultura-e-brinquedos/chupetas-e-acessorios-de-alimentacao/11609,,,,
+3,False,11613,11613,"Toalhas, Roupões, Resguardos e Mantas",toalhas-roupoes-resguardos-e-mantas,/shelves/bebe/puericultura-e-brinquedos/toalhas-roupoes-resguardos-e-mantas/11613,,,,
+3,False,10717,10717,"Massas, Arroz, Farinhas e Sementes",massas-arroz-farinhas-e-sementes,/shelves/alimentacao-alternativa/alimentacao-biologica/massas-arroz-farinhas-e-sementes/10717,,,,
+3,False,10718,10718,Outros,outros,/shelves/alimentacao-alternativa/alimentacao-biologica/outros/10718,,,,
+3,False,11280,11280,Frutas e Legumes Bio,frutas-e-legumes-bio,/shelves/alimentacao-alternativa/alimentacao-biologica/frutas-e-legumes-bio/11280,,,,
+3,False,11281,11281,Frutos Secos e Sementes Bio,frutos-secos-e-sementes-bio,/shelves/alimentacao-alternativa/alimentacao-biologica/frutos-secos-e-sementes-bio/11281,,,,
+3,False,11282,11282,Laticínios e Alternativas Bio,laticinios-e-alternativas-bio,/shelves/alimentacao-alternativa/alimentacao-biologica/laticinios-e-alternativas-bio/11282,,,,
+3,False,11283,11283,"Talho, Peixaria e Alternativas Bio",talho-peixaria-e-alternativas-bio,/shelves/alimentacao-alternativa/alimentacao-biologica/talho-peixaria-e-alternativas-bio/11283,,,,
+3,False,11284,11284,Bebé e Criança Bio,bebe-e-crianca-bio,/shelves/alimentacao-alternativa/alimentacao-biologica/bebe-e-crianca-bio/11284,,,,
+3,False,11286,11286,Sobremesas e Apoio à Pastelaria Bio,sobremesas-e-apoio-a-pastelaria-bio,/shelves/alimentacao-alternativa/alimentacao-biologica/sobremesas-e-apoio-a-pastelaria-bio/11286,,,,
+3,False,11287,11287,Bebidas e Garrafeira Bio,bebidas-e-garrafeira-bio,/shelves/alimentacao-alternativa/alimentacao-biologica/bebidas-e-garrafeira-bio/11287,,,,
+3,False,11288,11288,Cereais e Barras Bio,cereais-e-barras-bio,/shelves/alimentacao-alternativa/alimentacao-biologica/cereais-e-barras-bio/11288,,,,
+3,False,11289,11289,Cafés e Chás Bio,cafes-e-chas-bio,/shelves/alimentacao-alternativa/alimentacao-biologica/cafes-e-chas-bio/11289,,,,
+3,False,11290,11290,Doces e Mel Bio,doces-e-mel-bio,/shelves/alimentacao-alternativa/alimentacao-biologica/doces-e-mel-bio/11290,,,,
+3,False,11291,11291,Bolachas e Chocolates Bio,bolachas-e-chocolates-bio,/shelves/alimentacao-alternativa/alimentacao-biologica/bolachas-e-chocolates-bio/11291,,,,
+3,False,11292,11292,Ingredientes Culinária Bio,ingredientes-culinaria-bio,/shelves/alimentacao-alternativa/alimentacao-biologica/ingredientes-culinaria-bio/11292,,,,
+3,False,11277,11277,Leite e Bebidas Sem Lactose,leite-e-bebidas-sem-lactose,/shelves/alimentacao-alternativa/alimentacao-sem-lactose/leite-e-bebidas-sem-lactose/11277,,,,
+3,False,11276,11276,Iogurtes Sem Lactose,iogurtes-sem-lactose,/shelves/alimentacao-alternativa/alimentacao-sem-lactose/iogurtes-sem-lactose/11276,,,,
+3,False,11274,11274,Queijos Sem Lactose,queijos-sem-lactose,/shelves/alimentacao-alternativa/alimentacao-sem-lactose/queijos-sem-lactose/11274,,,,
+3,False,11814,11814,Manteiga e Natas Sem Lactose,manteiga-e-natas-sem-lactose,/shelves/alimentacao-alternativa/alimentacao-sem-lactose/manteiga-e-natas-sem-lactose/11814,,,,
+3,False,11278,11278,Sobremesas Sem Lactose,sobremesas-sem-lactose,/shelves/alimentacao-alternativa/alimentacao-sem-lactose/sobremesas-sem-lactose/11278,,,,
+3,False,11815,11815,Bolachas Sem Lactose,bolachas-sem-lactose,/shelves/alimentacao-alternativa/alimentacao-sem-lactose/bolachas-sem-lactose/11815,,,,
+3,False,11806,11806,Bolachas e Biscoitos,bolachas-e-biscoitos,/shelves/alimentacao-alternativa/alimentacao-sem-gluten/bolachas-e-biscoitos/11806,,,,
+3,False,11808,11808,"Arroz, Massa e Farinha",arroz-massa-e-farinha,/shelves/alimentacao-alternativa/alimentacao-sem-gluten/arroz-massa-e-farinha/11808,,,,
+3,False,11809,11809,"Cereais, Barras e Chocolates",cereais-barras-e-chocolates,/shelves/alimentacao-alternativa/alimentacao-sem-gluten/cereais-barras-e-chocolates/11809,,,,
+3,False,11805,11805,Padaria e Pastelaria,padaria-e-pastelaria,/shelves/alimentacao-alternativa/alimentacao-sem-gluten/padaria-e-pastelaria/11805,,,,
+3,False,11810,11810,Refeições Rápidas,refeicoes-rapidas,/shelves/alimentacao-alternativa/alimentacao-vegan/refeicoes-rapidas/11810,,,,
+3,False,11811,11811,Alternativas Queijo e Charcutaria,alternativas-queijo-e-charcutaria,/shelves/alimentacao-alternativa/alimentacao-vegan/alternativas-queijo-e-charcutaria/11811,,,,
+3,False,11812,11812,Sobremesas Vegan,sobremesas-vegan,/shelves/alimentacao-alternativa/alimentacao-vegan/sobremesas-vegan/11812,,,,
+3,False,11813,11813,Ingredientes Vegan,ingredientes-vegan,/shelves/alimentacao-alternativa/alimentacao-vegan/ingredientes-vegan/11813,,,,
+3,False,10711,10711,Bebidas de Soja,bebidas-de-soja,/shelves/alimentacao-alternativa/alimentacao-com-soja/bebidas-de-soja/10711,,,,
+3,False,10712,10712,Iogurtes e Sobremesas de Soja,iogurtes-e-sobremesas-de-soja,/shelves/alimentacao-alternativa/alimentacao-com-soja/iogurtes-e-sobremesas-de-soja/10712,,,,
+3,False,10863,10863,Cremes e molhos de culinária,cremes-e-molhos-de-culinaria,/shelves/alimentacao-alternativa/alimentacao-com-soja/cremes-e-molhos-de-culinaria/10863,,,,
+3,False,10713,10713,Outros Produtos de Soja,outros-produtos-de-soja,/shelves/alimentacao-alternativa/alimentacao-com-soja/outros-produtos-de-soja/10713,,,,
+3,False,10456,10456,"Massas,Arroz e Leguminosas",massasarroz-e-leguminosas,/shelves/alimentacao-alternativa/produtos-dieteticos/massasarroz-e-leguminosas/10456,,,,
+3,False,10454,10454,"Farinhas, Farelos e Sementes",farinhas-farelos-e-sementes,/shelves/alimentacao-alternativa/produtos-dieteticos/farinhas-farelos-e-sementes/10454,,,,
+3,False,10455,10455,Flocos e Cereais,flocos-e-cereais,/shelves/alimentacao-alternativa/produtos-dieteticos/flocos-e-cereais/10455,,,,
+3,False,10450,10450,Bolachas e Biscoitos,bolachas-e-biscoitos,/shelves/alimentacao-alternativa/produtos-dieteticos/bolachas-e-biscoitos/10450,,,,
+3,False,10451,10451,Chás Medicinais e Infusões,chas-medicinais-e-infusoes,/shelves/alimentacao-alternativa/produtos-dieteticos/chas-medicinais-e-infusoes/10451,,,,
+3,False,10452,10452,Chocolates e Achocolatados,chocolates-e-achocolatados,/shelves/alimentacao-alternativa/produtos-dieteticos/chocolates-e-achocolatados/10452,,,,
+3,False,10453,10453,Doces e Marmeladas ,doces-e-marmeladas,/shelves/alimentacao-alternativa/produtos-dieteticos/doces-e-marmeladas/10453,,,,
+3,False,10458,10458,Suplementos e Vitaminas,suplementos-e-vitaminas,/shelves/alimentacao-alternativa/produtos-dieteticos/suplementos-e-vitaminas/10458,,,,
+3,False,10906,10906,Refeições,refeicoes,/shelves/alimentacao-alternativa/produtos-dieteticos/refeicoes/10906,,,,
+3,False,10457,10457,Substitutos de refeição,substitutos-de-refeicao,/shelves/alimentacao-alternativa/produtos-dieteticos/substitutos-de-refeicao/10457,,,,
+3,False,10915,10915,Bebidas,bebidas,/shelves/alimentacao-alternativa/produtos-dieteticos/bebidas/10915,,,,
+3,False,11820,11820,Barras e Snacks,barras-e-snacks,/shelves/alimentacao-alternativa/nutricao-desportiva/barras-e-snacks/11820,,,,
+3,False,11821,11821,Proteína,proteina,/shelves/alimentacao-alternativa/nutricao-desportiva/proteina/11821,,,,
+3,False,11822,11822,Bebidas Instantâneas e Preparados,bebidas-instantaneas-e-preparados,/shelves/alimentacao-alternativa/nutricao-desportiva/bebidas-instantaneas-e-preparados/11822,,,,
+3,False,11823,11823,Suplementos,suplementos,/shelves/alimentacao-alternativa/nutricao-desportiva/suplementos/11823,,,,
+3,False,10659,10659,Ração Seca,racao-seca,/shelves/animais/cao/racao-seca/10659,,,,
+3,False,10658,10658,Comida Húmida,comida-humida,/shelves/animais/cao/comida-humida/10658,,,,
+3,False,10660,10660,Snacks e Biscoitos,snacks-e-biscoitos,/shelves/animais/cao/snacks-e-biscoitos/10660,,,,
+3,False,10657,10657,Acessórios e Brinquedos,acessorios-e-brinquedos,/shelves/animais/cao/acessorios-e-brinquedos/10657,,,,
+3,False,10663,10663,Ração Seca,racao-seca,/shelves/animais/gato/racao-seca/10663,,,,
+3,False,10662,10662,Comida Húmida,comida-humida,/shelves/animais/gato/comida-humida/10662,,,,
+3,False,10664,10664,Snacks e Biscoitos,snacks-e-biscoitos,/shelves/animais/gato/snacks-e-biscoitos/10664,,,,
+3,False,10666,10666,Areias e Higiene,areias-e-higiene,/shelves/animais/gato/areias-e-higiene/10666,,,,
+3,False,10665,10665,Acessórios e Brinquedos,acessorios-e-brinquedos,/shelves/animais/gato/acessorios-e-brinquedos/10665,,,,
+3,False,11263,11263,Pássaros,passaros,/shelves/animais/outros-animais/passaros/11263,,,,
+3,False,11266,11266,Roedores,roedores,/shelves/animais/outros-animais/roedores/11266,,,,
+3,False,10621,10621,Decoração para Festas,decoracao-para-festas,/shelves/casa/artigos-de-festa/decoracao-para-festas/10621,,,,
+3,False,10622,10622,Palhinhas e Velas de Aniversário,palhinhas-e-velas-de-aniversario,/shelves/casa/artigos-de-festa/palhinhas-e-velas-de-aniversario/10622,,,,
+3,False,10623,10623,Descartáveis,descartaveis,/shelves/casa/artigos-de-festa/descartaveis/10623,,,,
+3,False,10624,10624,Guardanapos e Toalhas,guardanapos-e-toalhas,/shelves/casa/artigos-de-festa/guardanapos-e-toalhas/10624,,,,
+3,False,10625,10625,Outros,outros,/shelves/casa/artigos-de-festa/outros/10625,,,,
+3,False,10626,10626,Cutelaria,cutelaria,/shelves/casa/cozinha/cutelaria/10626,,,,
+3,False,10627,10627,"Frigideiras, Tachos e Panelas",frigideiras-tachos-e-panelas,/shelves/casa/cozinha/frigideiras-tachos-e-panelas/10627,,,,
+3,False,10628,10628,"Pratos, Travessas e Saladeiras",pratos-travessas-e-saladeiras,/shelves/casa/cozinha/pratos-travessas-e-saladeiras/10628,,,,
+3,False,10629,10629,"Copos, Chávenas e Canecas",copos-chavenas-e-canecas,/shelves/casa/cozinha/copos-chavenas-e-canecas/10629,,,,
+3,False,10630,10630,Utensílios de Cozinha,utensilios-de-cozinha,/shelves/casa/cozinha/utensilios-de-cozinha/10630,,,,
+3,False,10631,10631,Conservação de Alimentos,conservacao-de-alimentos,/shelves/casa/cozinha/conservacao-de-alimentos/10631,,,,
+3,False,10726,10726,Fósforos e Palitos,fosforos-e-palitos,/shelves/casa/cozinha/fosforos-e-palitos/10726,,,,
+3,False,10632,10632,Outros,outros,/shelves/casa/cozinha/outros/10632,,,,
+3,False,10640,10640,Tratamento de Roupa,tratamento-de-roupa,/shelves/casa/lavandaria/tratamento-de-roupa/10640,,,,
+3,False,10641,10641,Tábuas de Engomar e Capas,tabuas-de-engomar-e-capas,/shelves/casa/lavandaria/tabuas-de-engomar-e-capas/10641,,,,
+3,False,10642,10642,Estendais e Cabides,estendais-e-cabides,/shelves/casa/lavandaria/estendais-e-cabides/10642,,,,
+3,False,10788,10788,Utilidades,utilidades,/shelves/casa/casa-de-banho/utilidades/10788,,,,
+3,False,10645,10645,Meias e Collants,meias-e-collants,/shelves/casa/textil/meias-e-collants/10645,,,,
+3,False,10647,10647,Têxtil-Lar,textil-lar,/shelves/casa/textil/textil-lar/10647,,,,
+3,False,10893,10893,Roupa,roupa,/shelves/casa/textil/roupa/10893,,,,
+3,False,10648,10648,Ferramentas e Acessórios,ferramentas-e-acessorios,/shelves/casa/bricolage/ferramentas-e-acessorios/10648,,,,
+3,False,10649,10649,Tintas e Vernizes,tintas-e-vernizes,/shelves/casa/bricolage/tintas-e-vernizes/10649,,,,
+3,False,10650,10650,Colas e Adesivos,colas-e-adesivos,/shelves/casa/bricolage/colas-e-adesivos/10650,,,,
+3,False,10944,10944,Aquecimento,aquecimento,/shelves/casa/bricolage/aquecimento/10944,,,,
+3,False,10651,10651,Limpeza e Proteção Auto,limpeza-e-protecao-auto,/shelves/casa/auto/limpeza-e-protecao-auto/10651,,,,
+3,False,10652,10652,Lubrificação e Manutenção Auto,lubrificacao-e-manutencao-auto,/shelves/casa/auto/lubrificacao-e-manutencao-auto/10652,,,,
+3,False,10653,10653,Outros,outros,/shelves/casa/auto/outros/10653,,,,
+3,False,10787,10787,Ambientores auto,ambientores-auto,/shelves/casa/auto/ambientores-auto/10787,,,,
+3,False,10654,10654,Lâmpadas e Lanternas,lampadas-e-lanternas,/shelves/casa/iluminacao-e-energia/lampadas-e-lanternas/10654,,,,
+3,False,10655,10655,Material e Acessórios Elétricos,material-e-acessorios-eletricos,/shelves/casa/iluminacao-e-energia/material-e-acessorios-eletricos/10655,,,,
+3,False,10656,10656,Pilhas e Lanternas,pilhas-e-lanternas,/shelves/casa/iluminacao-e-energia/pilhas-e-lanternas/10656,,,,
+3,False,10857,10857,Arrumação,arrumacao,/shelves/casa/arrumacao-e-utilidades/arrumacao/10857,,,,
+3,False,10894,10894,Outros,outros,/shelves/casa/arrumacao-e-utilidades/outros/10894,,,,
+3,False,11689,11689,Apoio Escolar,apoio-escolar,/shelves/papelaria/livros/apoio-escolar/11689,,,,
+3,False,11690,11690,Infantil,infantil,/shelves/papelaria/livros/infantil/11690,,,,
+3,False,11491,11491,"Cadernos, Blocos e Papel",cadernos-blocos-e-papel,/shelves/papelaria/material-escolar-e-escritorio/cadernos-blocos-e-papel/11491,,,,
+3,False,11492,11492,Escrita,escrita,/shelves/papelaria/material-escolar-e-escritorio/escrita/11492,,,,
+3,False,11493,11493,Organização e Arquivo,organizacao-e-arquivo,/shelves/papelaria/material-escolar-e-escritorio/organizacao-e-arquivo/11493,,,,
+3,False,11494,11494,"Desenho, Pintura e Moldes",desenho-pintura-e-moldes,/shelves/papelaria/material-escolar-e-escritorio/desenho-pintura-e-moldes/11494,,,,
+3,False,11495,11495,Mochilas e Estojos,mochilas-e-estojos,/shelves/papelaria/material-escolar-e-escritorio/mochilas-e-estojos/11495,,,,
+3,False,11496,11496,Material de Escritório,material-de-escritorio,/shelves/papelaria/material-escolar-e-escritorio/material-de-escritorio/11496,,,,
+3,False,11769,11769,Música,musica,/shelves/papelaria/material-escolar-e-escritorio/musica/11769,,,,
+3,False,11680,11680,Puzzles e Construções,puzzles-e-construcoes,/shelves/jogos-e-brinquedos/brinquedos/puzzles-e-construcoes/11680,,,,
+3,False,11681,11681,Bonecas e Peluches,bonecas-e-peluches,/shelves/jogos-e-brinquedos/brinquedos/bonecas-e-peluches/11681,,,,
+3,False,11682,11682,Ação e Aventura,acao-e-aventura,/shelves/jogos-e-brinquedos/brinquedos/acao-e-aventura/11682,,,,
+3,False,11683,11683,Brinquedos Exterior,brinquedos-exterior,/shelves/jogos-e-brinquedos/brinquedos/brinquedos-exterior/11683,,,,
+3,False,11684,11684,Veículos e Telecomandados,veiculos-e-telecomandados,/shelves/jogos-e-brinquedos/brinquedos/veiculos-e-telecomandados/11684,,,,
+3,False,11685,11685,Jogos Infantis e Educativos,jogos-infantis-e-educativos,/shelves/jogos-e-brinquedos/jogos/jogos-infantis-e-educativos/11685,,,,
+3,False,11686,11686,Jogos em Família,jogos-em-familia,/shelves/jogos-e-brinquedos/jogos/jogos-em-familia/11686,,,,
+3,False,11772,11772,Piscina,piscina,/shelves/ar-livre/jardim/piscina/11772,,,,
+3,False,11771,11771,Barbecue,barbecue,/shelves/ar-livre/jardim/barbecue/11771,,,,
+3,False,11773,11773,Mobiliário,mobiliario,/shelves/ar-livre/jardim/mobiliario/11773,,,,
+3,False,11774,11774,Decoração e Tratamento de Jardim,decoracao-e-tratamento-de-jardim,/shelves/ar-livre/jardim/decoracao-e-tratamento-de-jardim/11774,,,,
+3,False,11775,11775,Acessórios,acessorios,/shelves/ar-livre/praia-e-campismo/acessorios/11775,,,,
+3,False,11776,11776,Conservação de Alimentos,conservacao-de-alimentos,/shelves/ar-livre/praia-e-campismo/conservacao-de-alimentos/11776,,,,
