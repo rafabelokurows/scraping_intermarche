@@ -86,8 +86,10 @@ if last_exec == 0:
     except Exception as e:
         print(f"Final error: {e}")
     match = re.search(r'window\.__REACT_ESI__\[.*?\] = \{.*?"categories":(.*?)};\s*document\.currentScript\.remove\(\);', response.text, re.DOTALL)
+    categories_list = []
 
     if match:
+        print("deu match aqui")
         categories_json_str = match.group(1).strip()
         
         # Step 3: Convert the extracted string into a Python dictionary
@@ -119,7 +121,9 @@ if last_exec == 0:
 
         # Step 5: Create a DataFrame from the flattened list
         df_categories = pd.DataFrame(categories_list)
-
+    else:
+        print("não deu match")
+    print(categories_list)
     levels = df_categories.query("level == 3").reset_index(drop=True)
     print(f'There are {levels.shape[0]} categories to scrape')
     levels.to_csv(f'./data/{today}/categories.csv',encoding='utf-8-sig', index=False)
@@ -294,3 +298,4 @@ if (last_exec-1) < levels.shape[0]:
 else:
     print("There are no more pages to scrape")
 #%%
+
